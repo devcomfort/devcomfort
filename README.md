@@ -13,7 +13,7 @@
 ### 정보 기록 및 정리
 
 -   [알고리즘 문제 풀이](https://github.com/devcomfort/algorithms_and_codes)
--   [창의적생활코딩2 - R언어 정리](https://github.com/devcomfort/dsu-rlang-course)
+-   [창의적생활코딩2 - R언어 정리](https://github.com/devcomfort/DSU-Rlang)
     > `R언어`에 대한 수업 내용을 나열/정리하는 레포지토리
 
 ### 프로젝트
