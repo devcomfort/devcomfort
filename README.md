@@ -6,31 +6,6 @@
 
 </div>
 
----
-
-## Bookmarks
-
-### 정보 기록 및 정리
-
--   [알고리즘 문제 풀이](https://github.com/devcomfort/algorithms_and_codes)
--   [창의적생활코딩2 - R언어 정리](https://github.com/devcomfort/DSU-Rlang)
-    > `R언어`에 대한 수업 내용을 나열/정리하는 레포지토리
-
-### 프로젝트
-
--   [DSU Utils](https://github.com/devcomfort/DSU-Utils)
-
--   [KakaoTalk Explorer CLI](https://github.com/devcomfort/kakaotalk-explorer-cli)
-    > 카카오톡 채팅 로그 분석기 (CLI)
-
-### 참고 자료
-
--   [Effective Go - Github](https://github.com/devcomfort/effective-go)
-    > `Effective Go`의 한국어 번역 문서
--   [Go 언어 공부를 위한 자료 및 문서 정리 - pronist.dev](https://pronist.dev/95)
-
----
-
 <div align="center">
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=devcomfort)](https://github.com/devcomfort/github-readme-stats)
