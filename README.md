@@ -24,6 +24,8 @@
 <img src="https://img.shields.io/badge/Cloudflare Pages-F38020?style=flat-square&logo=Cloudflare Pages&logoColor=white"/>
 <img src="https://img.shields.io/badge/NGINX-009639?style=flat-square&logo=NGINX&logoColor=white"/>
 
+<!-- ## Stacks -->
+
 ## I'm currently learning
 
 <img src="https://img.shields.io/badge/Github Actions-2088FF?style=flat-square&logo=Github Actions&logoColor=white"/>
