@@ -1,3 +1,5 @@
+<div align="left">
+
 # devcomfort
 
 [![devcomfort's GitHub stats](https://github-readme-stats.vercel.app/api?username=devcomfort)](https://github.com/devcomfort)
@@ -30,3 +32,5 @@
 <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=FastAPI&logoColor=white"/>
 <img src="https://img.shields.io/badge/Svelte-FF3E00?style=flat-square&logo=Svelte&logoColor=white"/>
 <img src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=Vite&logoColor=white"/>
+
+</div>
