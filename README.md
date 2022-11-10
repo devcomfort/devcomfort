@@ -2,6 +2,18 @@
 
 # devcomfort
 
+## Introduction
+
+I am a Software Developer and student in Korea, mostly working on `Web`, `Automation`.
+Lately, I am creating npm and GitHub packages, and freelancing.
+
+I love to create things; make ideas, make high-functional things, literally those are what I love.
+
+So, feel free to contact me. You can contact me via [20211343@g.dongseo.ac.kr](mailto:20211343@g.dongseo.ac.kr).
+I love anyone has passionation.
+
+## Stats
+
 [![devcomfort's GitHub stats](https://github-readme-stats.vercel.app/api?username=devcomfort)](https://github.com/devcomfort)
 
 ## Languages
