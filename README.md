@@ -4,13 +4,11 @@
 
 ## I am
 
-A Software Developer, a freelancer, and college student in Korea.
-I am mostly working on `web`, and `automation`, and fascinating in `AI`, `data analysis`.
+a Korean college student, freelancer, and software developer. I work primarily in the web, automation, and data analysis fields of artificial intelligence.
 
-Lately, I am creating npm packages, and websites.
-I love to create things; make ideas, make high-functional things, literally those are what I love.
+I've been developing websites and npm packages lately. I literally love to make things; I love to make ideas and highly functional objects.
 
-Feel free to contact via [20211343@g.dongseo.ac.kr](mailto:20211343@g.dongseo.ac.kr).
+Contact us at 20211343@g.dongseo.ac.kr without hesitation.
 
 ## GitHub Stats
 
