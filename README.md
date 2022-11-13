@@ -10,6 +10,10 @@ I've been developing websites and npm packages lately. I literally love to make 
 
 Contact us at 20211343@g.dongseo.ac.kr without hesitation.
 
+## Project List
+
+You can view my project list by clicking [here](projects.md).
+
 ## GitHub Stats
 
 [![devcomfort's GitHub stats](https://github-readme-stats.vercel.app/api?username=devcomfort)](https://github.com/devcomfort)
