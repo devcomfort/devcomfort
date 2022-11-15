@@ -3,11 +3,11 @@
 - [남기는 말](#남기는-말)
 - [개인 프로젝트](#개인-프로젝트)
   - [토이 프로젝트](#토이-프로젝트)
-  - [진행 중 프로젝트](#진행-중-프로젝트)
-  - [보류 중인 프로젝트](#보류-중인-프로젝트)
   - [패키지](#패키지)
 - [외주 프로젝트](#외주-프로젝트)
 - [기여 프로젝트](#기여-프로젝트)
+  - [진행 중 프로젝트](#진행-중-프로젝트)
+  - [보류 중인 프로젝트](#보류-중인-프로젝트)
 
 ## 남기는 말
 
@@ -28,14 +28,6 @@
   - [배포된 웹사이트](https://dsu-react-assignment-ex4.vercel.app/)
 - [ztype-hack](https://github.com/devcomfort/ztype-hack); [zty.pe](https://zty.pe) 게임의 코드를 분석해서 만든 조작 코드 (심심풀이)
 
-### 진행 중 프로젝트
-
-- [WebJS](https://github.com/devcomfort/webJS); 웹사이트에서 사용할 수 있는 패키지/모듈을 제작하고 배포하는 레포입니다. 자세한 내용은 레포지토리 내에서 확인할 수 있습니다.
-
-### 보류 중인 프로젝트
-
-- [One CLI](https://github.com/devcomfort/One-CLI); apt, brew, choco와 같이 범용으로 사용할 수 있는 패키지를 만들어보는 것이 목표인 프로젝트입니다. 일정으로 인한 시간 부족과 계획 부족으로 보류되었습니다.
-
 ### 패키지
 
 - [text-transcoder](https://github.com/devcomfort/js-module-text-transcoder): `alanode`와 `text-decoding` 프로젝트를 사용/래핑하여 만든 모듈입니다. 텍스트의 인코딩 변경에 사용되며, `alanode`와 `package.json`의 사용, 조작을 통한 CommonJS, ESM의 공통 지원 모듈 제작법에 대해 알게된 프로젝트입니다.
@@ -48,3 +40,11 @@
 ## 기여 프로젝트
 
 `TBD`; 현재 공식적으로 기여한 프로젝트가 없습니다.
+
+### 진행 중 프로젝트
+
+- [WebJS](https://github.com/devcomfort/webJS); 웹사이트에서 사용할 수 있는 패키지/모듈을 제작하고 배포하는 레포입니다. 자세한 내용은 레포지토리 내에서 확인할 수 있습니다.
+
+### 보류 중인 프로젝트
+
+- [One CLI](https://github.com/devcomfort/One-CLI); apt, brew, choco와 같이 범용으로 사용할 수 있는 패키지를 만들어보는 것이 목표인 프로젝트입니다. 일정으로 인한 시간 부족과 계획 부족으로 보류되었습니다.
