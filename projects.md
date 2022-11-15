@@ -36,8 +36,6 @@
 
 - [One CLI](https://github.com/devcomfort/One-CLI); apt, brew, choco와 같이 범용으로 사용할 수 있는 패키지를 만들어보는 것이 목표인 프로젝트입니다. 일정으로 인한 시간 부족과 계획 부족으로 보류되었습니다.
 
----
-
 ### 패키지
 
 - [text-transcoder](https://github.com/devcomfort/js-module-text-transcoder): `alanode`와 `text-decoding` 프로젝트를 사용/래핑하여 만든 모듈입니다. 텍스트의 인코딩 변경에 사용되며, `alanode`와 `package.json`의 사용, 조작을 통한 CommonJS, ESM의 공통 지원 모듈 제작법에 대해 알게된 프로젝트입니다.
