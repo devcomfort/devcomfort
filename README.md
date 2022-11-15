@@ -8,7 +8,7 @@ a Korean college student, freelancer, and software developer. I work primarily i
 
 I've been developing websites and npm packages lately. I literally love to make things; I love to make ideas and highly functional objects.
 
-Contact us at 20211343@g.dongseo.ac.kr without hesitation.
+Free free to contact via [devcomfort02@gmail.com](devcomfort02@gmail.com)
 
 ## Project List
 
