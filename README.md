@@ -106,6 +106,12 @@
 
 ## 공부하려고 노리는 중
 
-<img src="https://img.shields.io/badge/Puppeteer-FFAE1A?style=flat-square&logo=Puppeteer&logoColor=white"/>
+<img src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=Rust&logoColor=white"/>
+<img src="https://img.shields.io/badge/Clojure-5881D8?style=flat-square&logo=Clojure&logoColor=white"/>
+<img src="https://img.shields.io/badge/Scala-DC322F?style=flat-square&logo=Scala&logoColor=white"/>
+<img src="https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=Kotlin&logoColor=white"/>
+<br>
+
+<img src="https://img.shields.io/badge/Vitest-6E9F18?style=flat-square&logo=Vitest&logoColor=white"/>
 
 </div>
