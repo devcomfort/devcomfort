@@ -83,8 +83,6 @@
 > **배지 없음**
 > Hono.js
 
-<br>
-
 <!-- ORM -->
 
 <strong>ORM</strong>
@@ -101,6 +99,10 @@
 ## (기타) 라이브러리
 
 <img src="https://img.shields.io/badge/ReactiveX-B7178C?style=flat-square&logo=ReactiveX&logoColor=white"/>
+<img src="https://img.shields.io/badge/Puppeteer-FFAE1A?style=flat-square&logo=Puppeteer&logoColor=white"/>
+
+## 공부하려고 노리는 중
+
 <img src="https://img.shields.io/badge/Puppeteer-FFAE1A?style=flat-square&logo=Puppeteer&logoColor=white"/>
 
 </div>
