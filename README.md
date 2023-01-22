@@ -110,6 +110,11 @@
 <img src="https://img.shields.io/badge/Clojure-5881D8?style=flat-square&logo=Clojure&logoColor=white"/>
 <img src="https://img.shields.io/badge/Scala-DC322F?style=flat-square&logo=Scala&logoColor=white"/>
 <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=Kotlin&logoColor=white"/>
+<img src="https://img.shields.io/badge/ReScript-E6484F?style=flat-square&logo=ReScript&logoColor=white"/>
+
+> **배지 없음**
+> ClojureScript
+
 <br>
 
 <img src="https://img.shields.io/badge/Vitest-6E9F18?style=flat-square&logo=Vitest&logoColor=white"/>
