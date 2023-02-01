@@ -2,121 +2,133 @@
 
 # devcomfort
 
-## 소개
-
-저는 동서대학교에 재학 중인 대학생입니다. 웹사이트, 웹 서버, 자동화에 대해 공부하고 있으며, 대학 생활 동안 데이터 분석, AI 분야를 공부하기 위해 준비 중입니다.
-최근에는 프리랜서, 대학생 활동과 함께 npm 패키지, 웹사이트 제작을 하고 있습니다.
-
-`#웹사이트` `#웹서버` `#Node.js 개발자`
-`#함수형 프로그래밍` `#반응형 프로그래밍`
-
-## 진행한 프로젝트 목록
-
-`정리 중 입니다!`
-
 ## GitHub Stats
 
 [![devcomfort's GitHub stats](https://github-readme-stats.vercel.app/api?username=devcomfort)](https://github.com/devcomfort)
+
+## 목차
+
+- [소개](#소개)
+- [진행한 프로젝트 (정리 중)](#진행한-프로젝트)
+- [기술 스택](#기술-스택)
+  - [언어](#언어)
+  - [프론트엔드](#프론트엔드)
+  - [백엔드](#백엔드)
+  - [ORM](#orm)
+  - [버전 관리](#버전-관리)
+  - [CI/CD](#cicd)
+  - [DevOps](#devops)
+  - [Network](#network)
+  - [Testing](#testing)
+  - [Misc](#misc)
+- [기술 스택 - 공부 예정](#기술-스택---공부-예정)
+
+## 소개
+
+2023년을 기준으로 동서대학교 소프트웨어학과 3학년에 재학 중입니다.
+
+프론트엔드, 백엔드를 공부해서 외주/개인 개발 활동을 하고 있고, 앞으로 빅데이터와 AI 분야를 공부하려고 합니다.
+
+주로 프리랜서, 대학생 활동하면서 개인 프로젝트 하는 것을 좋아합니다.
+
+`#프론트엔드 개발자` `#백엔드 개발자` `#Node.js 개발자`
+`#함수형 프로그래밍` `#반응형 프로그래밍`
+
+## 진행한 프로젝트
+
+> **NOTE**
+>
+> `아직 정리가 완료되지 않은 쳅터입니다!`
+
+- [npm 패키지](#npm-패키지)
+
+### npm 패키지
+
+- [blob-to-url](https://www.npmjs.com/package/blob-to-url): Blob / File 객체를 Blob URL 또는 Data URL로 바꿔주는 라이브러리 입니다.
+- [@devcomfort/text-transcoder](https://www.npmjs.com/package/@devcomfort/text-transcoder): Web Encoding API에서 처리되지 않은 인코딩 변환을 위한 라이브러리 입니다.
+- [@devcomfort/csv-reader](https://www.npmjs.com/package/@devcomfort/csv-reader): 자바스크립트 환경에서 csv 파일을 읽기 위한 라이브러리 입니다.
+- [@devcomfort/web-secreen-recorder](https://www.npmjs.com/package/@devcomfort/web-screen-recorder): MediaRecorder API를 통한 브라우저 내 화면 녹화를 위한 라이브러리 입니다. 아직 개발 중인 라이브러리 입니다.
 
 ## 기술 스택
 
 ### 언어
 
-<img src="https://img.shields.io/badge/HTML-E34F26?style=flat-square&logo=HTML5&logoColor=white"/>
-<img src="https://img.shields.io/badge/CSS-1572B6?style=flat-square&logo=CSS3&logoColor=white"/>
-<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=JavaScript&logoColor=white"/>
-<img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=TypeScript&logoColor=white"/>
-<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=Python&logoColor=white"/>
-<img src="https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=Go&logoColor=white"/>
-<img src="https://img.shields.io/badge/C-A8B9CC?style=flat-square&logo=C&logoColor=white"/>
+- HTML
+- CSS3
+- JavaScript
+- TypeScript
+- Python
+- C
+- Go
+
+### 프론트엔드
+
+- Vite
+- Webpack
+- Parcel
+- Lit
+- Svelte
+- SvelteKit
+- React
+  - React Router
+  - React Query
+
+### 백엔드
+
+- Koa.js
+- Hono.js
+
+### ORM
+
+- Prisma
+
+### 버전 관리
+
+- Git
+- GitHub
+
+### CI/CD
+
+- Vercel
+- Netlify
+- GitHub Actions
 
 ### DevOps
 
-<img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=Git&logoColor=white"/>
-<img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=GitHub&logoColor=white"/> 
-<img src="https://img.shields.io/badge/Notion-000000?style=flat-square&logo=Notion&logoColor=white"/>
-<br>
+- AWS
+  - Amazon SES
+  - Amazon SNS
+  - Amazon SQS
+- Cloudflare
+  - Cloudflare R2
+  - Cloudflare Workers
+  - Cloudflare Workers KV
+  - Cloudflare Durable Objects
+- Notion
+- .ENV
 
-<img src="https://img.shields.io/badge/Netlify-00C7B7?style=flat-square&logo=Netlify&logoColor=white"/>
-<img src="https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=Vercel&logoColor=white"/>
-<img src="https://img.shields.io/badge/Cloudflare Pages-F38020?style=flat-square&logo=Cloudflare Pages&logoColor=white"/>
-<img src="https://img.shields.io/badge/Github Actions-2088FF?style=flat-square&logo=Github Actions&logoColor=white"/>
-<br>
+### Network
 
-<img src="https://img.shields.io/badge/.ENV-ECD53F?style=flat-square&logo=.ENV&logoColor=white"/>
+- Cloudflare
+- Nginx
 
-## 네트워크 흐름 제어
+### Testing
 
-<img src="https://img.shields.io/badge/Cloudflare-F38020?style=flat-square&logo=Cloudflare&logoColor=white"/>
-<img src="https://img.shields.io/badge/NGINX-009639?style=flat-square&logo=NGINX&logoColor=white"/>
+- Vitest
+- Jest
 
-## 웹 개발
+### Misc
 
-<!-- 빌드 도구 -->
+- ReactiveX
+- Puppeteer
 
-<strong>빌드 도구</strong>
+## 기술 스택 - 공부 예정
 
-<img src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=Vite&logoColor=white"/>
-
-<!-- 번들러 -->
-
-<strong>번들러</strong>
-
-<img src="https://img.shields.io/badge/WebPack-8DD6F9?style=flat-square&logo=WebPack&logoColor=white"/>
-
-> **배지 없음**
-> Parcel
-
-<!-- 웹 프레임워크 -->
-
-<strong>웹 프레임워크</strong>
-
-<img src="https://img.shields.io/badge/Lit-324FFF?style=flat-square&logo=Lit&logoColor=white"/>
-<img src="https://img.shields.io/badge/Svelte-FF3E00?style=flat-square&logo=Svelte&logoColor=white"/>
-<img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=React&logoColor=white"/>
-<img src="https://img.shields.io/badge/React Router-CA4245?style=flat-square&logo=React Router&logoColor=white"/>
-<img src="https://img.shields.io/badge/React Query-FF4154?style=flat-square&logo=React Query&logoColor=white"/>
-
-<!-- Backend Framework -->
-
-<strong>백엔드</strong>
-
-<img src="https://img.shields.io/badge/Koa-33333D?style=flat-square&logo=Koa&logoColor=white"/>
-
-> **배지 없음**
-> Hono.js
-
-<!-- ORM -->
-
-<strong>ORM</strong>
-
-<img src="https://img.shields.io/badge/Prisma-2D3748?style=flat-square&logo=Prisma&logoColor=white"/>
-<br>
-
-<!-- Test Library -->
-
-<strong> Test Library </strong>
-
-<img src="https://img.shields.io/badge/Jest-C21325?style=flat-square&logo=Jest&logoColor=white"/>
-
-## (기타) 라이브러리
-
-<img src="https://img.shields.io/badge/ReactiveX-B7178C?style=flat-square&logo=ReactiveX&logoColor=white"/>
-<img src="https://img.shields.io/badge/Puppeteer-FFAE1A?style=flat-square&logo=Puppeteer&logoColor=white"/>
-
-## 공부하려고 노리는 중
-
-<img src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=Rust&logoColor=white"/>
-<img src="https://img.shields.io/badge/Clojure-5881D8?style=flat-square&logo=Clojure&logoColor=white"/>
-<img src="https://img.shields.io/badge/Scala-DC322F?style=flat-square&logo=Scala&logoColor=white"/>
-<img src="https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=Kotlin&logoColor=white"/>
-<img src="https://img.shields.io/badge/ReScript-E6484F?style=flat-square&logo=ReScript&logoColor=white"/>
-
-> **배지 없음**
-> ClojureScript
-
-<br>
-
-<img src="https://img.shields.io/badge/Vitest-6E9F18?style=flat-square&logo=Vitest&logoColor=white"/>
+- Rust
+- Clojure
+- Scala
+- Kotlin
+- ReScript
+- ClojureScript
 
 </div>
