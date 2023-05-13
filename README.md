@@ -137,6 +137,11 @@
 <!-- Nginx -->
 <img src="https://img.shields.io/badge/Nginx-009639?style=flat&logo=Nginx&logoColor=white" />
 
+### Validation
+
+<!-- Joi -->
+<img src="https://img.shields.io/badge/Joi-0080ff?style=flat&logoColor=white" />
+
 ### Testing
 
 <!-- Vitest -->
