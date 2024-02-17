@@ -22,14 +22,14 @@
 
 ## Projects
 
-<table style="border: none;">
+<table>
   <tbody>
-    <td style="border: none">
+    <td>
       <a href="https://github.com/devcomfort/blob-to-url">
         <img src="https://github-readme-stats.vercel.app/api/pin/?username=devcomfort&repo=blob-to-url" alt="blob-to-url" />
       </a>
     </td>
-    <td style="border: none">
+    <td>
       <a href="https://github.com/devcomfort/devcomfort-text-transcoder">
         <img src="https://github-readme-stats.vercel.app/api/pin/?username=devcomfort&repo=devcomfort-text-transcoder" alt="@devcomfort/text-transcoder" />
       </a>
@@ -48,7 +48,7 @@
 
 ## Profiles
 
-<table style="border: none;">
+<table>
   <thead>
     <tr>
       <th style="border: none;" colspan='2'>
@@ -58,20 +58,20 @@
   </thead>
   <tbody>
     <tr>
-      <td style="border: none">
+      <td>
         <img src="https://github-readme-stats.vercel.app/api?username=devcomfort&show_icons=true" alt="devcomfort's GitHub Stats" />
       </td>
-      <td style="border: none" rowspan='2'>
+      <td rowspan='2'>
         <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=devcomfort&layout=pie" alt="Top Langs" />
       </td>
     </tr>
     <tr>
-      <td style="border: none">
+      <td>
         <a href="https://git.io/streak-stats"><img src="https://streak-stats.demolab.com?user=devcomfort&theme=transparent" alt="GitHub Streak" /></a>
       </td>
     </tr>
     <tr>
-      <td style="border: none" colspan='2'>
+      <td colspan='2'>
         <img src="https://github-widgetbox.vercel.app/api/skills?languages=js,ts,html,css,sass,bash,c,python,go,dart,rust,r,markdown,json&frameworks=svelte,next,express,windi,tailwind&libraries=tensorflow,babel,vite,recoil,redux&tools=git,github,npm,yarn,vercel,netlify,nodejs,prettier,nginx,aws,cloudflare,webpack,rollup&software=linux,windows,vscode,notion&includeNames=true" alt="GitHub WidgetBox" />
         <!-- puppeteer, tauri -->
       </td>
@@ -83,3 +83,9 @@
 <!--https://yhype.me/github/profile-views  -->
 
 ![](https://hit.yhype.me/github/profile?user_id=38955618)
+
+<style>
+table, th, td {
+  border: none;
+}
+</style>
