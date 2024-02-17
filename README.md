@@ -1,5 +1,3 @@
-<div align="left">
-
 # devcomfort
 
 ![](https://komarev.com/ghpvc/?username=devcomfort&abbreviated=true)
