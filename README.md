@@ -26,7 +26,7 @@
 
 ## Projects
 
-<div style="display: flex; gap: 8px;">
+<div style="display: flex; flex-direction: row; gap: 8px;">
 
 [![blob-to-url](https://github-readme-stats.vercel.app/api/pin/?username=devcomfort&repo=blob-to-url)](https://github.com/devcomfort/blob-to-url)
 
