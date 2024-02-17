@@ -22,13 +22,20 @@
 
 ## Projects
 
-<div style="display: flex; flex-direction: row; gap: 8px;">
-
-[![blob-to-url](https://github-readme-stats.vercel.app/api/pin/?username=devcomfort&repo=blob-to-url)](https://github.com/devcomfort/blob-to-url)
-
-[![@devcomfort/text-transcoder](https://github-readme-stats.vercel.app/api/pin/?username=devcomfort&repo=devcomfort-text-transcoder)](https://github.com/devcomfort/devcomfort-text-transcoder)
-
-</div>
+<table style="border: none;">
+  <tbody>
+    <td style="border: none">
+      <a href="https://github.com/devcomfort/blob-to-url">
+        <img src="https://github-readme-stats.vercel.app/api/pin/?username=devcomfort&repo=blob-to-url" alt="blob-to-url" />
+      </a>
+    </td>
+    <td style="border: none">
+      <a href="https://github.com/devcomfort/devcomfort-text-transcoder">
+        <img src="https://github-readme-stats.vercel.app/api/pin/?username=devcomfort&repo=devcomfort-text-transcoder" alt="@devcomfort/text-transcoder" />
+      </a>
+    </td>
+  </tbody>
+</table>
 
 ## Contacts
 
@@ -41,25 +48,36 @@
 
 ## Profiles
 
-<img src="https://github-widgetbox.vercel.app/api/profile?username=devcomfort&data=followers,repositories,stars,commits" alt="GitHub WidgetBox" />
-
-<div style="display: flex; gap: 1.5rem; justify-content: center;">
-
-<div style="display: flex; flex-direction: column; width: 27rem;">
-
-<img src="https://github-readme-stats.vercel.app/api?username=devcomfort&show_icons=true" alt="devcomfort's GitHub Stats" />
-
-<a href="https://git.io/streak-stats"><img src="https://streak-stats.demolab.com?user=devcomfort&theme=transparent" alt="GitHub Streak" /></a>
-
-</div>
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=devcomfort&layout=pie" alt="Top Langs" />
-
-</div>
-
-<img src="https://github-widgetbox.vercel.app/api/skills?languages=js,ts,html,css,sass,bash,c,python,go,dart,rust,r,markdown,json&frameworks=svelte,next,express,windi,tailwind&libraries=tensorflow,babel,vite,recoil,redux&tools=git,github,npm,yarn,vercel,netlify,nodejs,prettier,nginx,aws,cloudflare,webpack,rollup&software=linux,windows,vscode,notion&includeNames=true" alt="GitHub WidgetBox" />
-
-<!-- puppeteer, tauri -->
+<table style="border: none;">
+  <thead>
+    <tr>
+      <th style="border: none;" colspan='2'>
+        <img src="https://github-widgetbox.vercel.app/api/profile?username=devcomfort&data=followers,repositories,stars,commits" alt="GitHub WidgetBox" />
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border: none">
+        <img src="https://github-readme-stats.vercel.app/api?username=devcomfort&show_icons=true" alt="devcomfort's GitHub Stats" />
+      </td>
+      <td style="border: none" rowspan='2'>
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=devcomfort&layout=pie" alt="Top Langs" />
+      </td>
+    </tr>
+    <tr>
+      <td style="border: none">
+        <a href="https://git.io/streak-stats"><img src="https://streak-stats.demolab.com?user=devcomfort&theme=transparent" alt="GitHub Streak" /></a>
+      </td>
+    </tr>
+    <tr>
+      <td style="border: none" colspan='2'>
+        <img src="https://github-widgetbox.vercel.app/api/skills?languages=js,ts,html,css,sass,bash,c,python,go,dart,rust,r,markdown,json&frameworks=svelte,next,express,windi,tailwind&libraries=tensorflow,babel,vite,recoil,redux&tools=git,github,npm,yarn,vercel,netlify,nodejs,prettier,nginx,aws,cloudflare,webpack,rollup&software=linux,windows,vscode,notion&includeNames=true" alt="GitHub WidgetBox" />
+        <!-- puppeteer, tauri -->
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 <!-- YHYPE, GitHub 방문자 집계 서비스 -->
 <!--https://yhype.me/github/profile-views  -->
