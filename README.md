@@ -2,13 +2,9 @@
 
 # devcomfort
 
-<div style="display: flex; justify-content: space-between; place-items: center; align-items: top;">
-
-## Introduction
-
 ![](https://komarev.com/ghpvc/?username=devcomfort&abbreviated=true)
 
-</div>
+## Introduction
 
 2014년부터 10년간 개발 공부를 하고 있는 대학생 개발자 devcomfort 입니다.
 
@@ -45,23 +41,23 @@
 
 ## Profiles
 
-![GitHub WidgetBox](https://github-widgetbox.vercel.app/api/profile?username=devcomfort&data=followers,repositories,stars,commits)
+<img src="https://github-widgetbox.vercel.app/api/profile?username=devcomfort&data=followers,repositories,stars,commits" alt="GitHub WidgetBox" />
 
 <div style="display: flex; gap: 1.5rem; justify-content: center;">
 
 <div style="display: flex; flex-direction: column; width: 27rem;">
 
-![devcomfort's GitHub stats](https://github-readme-stats.vercel.app/api?username=devcomfort&show_icons=true)
+<img src="https://github-readme-stats.vercel.app/api?username=devcomfort&show_icons=true" alt="devcomfort's GitHub Stats" />
 
 <a href="https://git.io/streak-stats"><img src="https://streak-stats.demolab.com?user=devcomfort&theme=transparent" alt="GitHub Streak" /></a>
 
 </div>
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=devcomfort&layout=pie)
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=devcomfort&layout=pie" alt="Top Langs" />
 
 </div>
 
-![GitHub WidgetBox](https://github-widgetbox.vercel.app/api/skills?languages=js,ts,html,css,sass,bash,c,python,go,dart,rust,r,markdown,json&frameworks=svelte,next,express,windi,tailwind&libraries=tensorflow,babel,vite,recoil,redux&tools=git,github,npm,yarn,vercel,netlify,nodejs,prettier,nginx,aws,cloudflare,webpack,rollup&software=linux,windows,vscode,notion&includeNames=true)
+<img src="https://github-widgetbox.vercel.app/api/skills?languages=js,ts,html,css,sass,bash,c,python,go,dart,rust,r,markdown,json&frameworks=svelte,next,express,windi,tailwind&libraries=tensorflow,babel,vite,recoil,redux&tools=git,github,npm,yarn,vercel,netlify,nodejs,prettier,nginx,aws,cloudflare,webpack,rollup&software=linux,windows,vscode,notion&includeNames=true" alt="GitHub WidgetBox" />
 
 <!-- puppeteer, tauri -->
 
