@@ -2,40 +2,70 @@
 
 # devcomfort
 
-## GitHub Stats
+<div style="display: flex; justify-content: space-between; place-items: center; align-items: top;">
 
-<a href="https://github.com/devcomfort" title="devcomfort's GitHub Stats">
-  <img src="https://github-readme-stats.vercel.app/api?username=devcomfort" />
-</a>
+## Introduction
 
-## 소개
+![](https://komarev.com/ghpvc/?username=devcomfort&abbreviated=true)
 
-동서대학교 소프트웨어학과 3학년으로 재학 중인 학생입니다.
+</div>
 
-다양한 언어, 라이브러리, 프레임워크를 사용해 머리로만 구상한 아이디어를 실제로 구현하는 것을 즐깁니다.
+2014년부터 10년간 개발 공부를 하고 있는 대학생 개발자 devcomfort 입니다.
 
-웹사이트, 서버, Pub/Sub 서비스, AI, 데이터 등 다양한 분야에서 공부하고 역량을 쌓기 위해 노력하고 있습니다.
+주로 JavaScript, TypeScript, Python, Go를 사용하여 웹 개발, 서버 개발, 자동화, 라이브러리 개발 프로젝트를 하고 있으며, 현재는 데이터 과학, AI 이론 공부를 하고 있습니다.
 
-최근에는 개인 기술 블로그, 외주, AI 공부를 하면서 교내 학생의 역량 향상을 위해 스터디를 꾸리고 있습니다.
+거의 모든 프로젝트에서 다양한 테스트, 프로그래밍 패러다임, 프레임워크, 라이브러리, 컨벤션 정의 등을 하여 안정적이고 신뢰성 있는 프로그램, 코드를 개발을 목표로 이끌어가는 편입니다.
 
-교육에 대한 관심, 프로그래밍에 대한 관심, 그리고 아이디어를 현실화 하고자 하는 욕심으로 배우는 것이 많은 지도, 안정적인 코드, 실수를 최소화하는 협업 환경을 목표로 추구합니다.
+오랜 시간 개인으로 활동하여 협업, 인간관계 등, 흔히 말하는 소프트 스킬이 뛰어난 사람은 아니지만,
+이 부분은 10년 간 다양한 언어, 프레임워크, 라이브러리, 개발 지식을 공부한 것처럼 소프트 스킬은 물론이고 새로운 기술에 대해서도 열정적이고 철저하게 공부, 습득하고 있습니다.
 
-앞으로 꾸준히 성장하여 좋은 개발자, AI 엔지니어가 되기 위해 노력하겠습니다.
+협업과 기술 지식 역량, 경험을 늘리기 위해 프로젝트, 진로 질문, 개인적인 연락까지도 자유롭게 받고 있으니, 원하시는 분은 편하게 연락주세요!
 
-개발 관련 연락은 언제나 환영이니 편히 연락 주세요!
-
-- 기술 블로그: [https://blog.devcomfort.dev](https://blog.devcomfort.dev)
-- 이메일: [im@devcomfort.dev](mailto:im@devcomfort.dev)
-
-`#풀스택_개발자` `#Node.js_개발자` `#인공지능_공부_중` `#데이터` `#DevOps` `#CI/CD` `#데이터베이스_공부_중`
+꾸준히 공부, 연구, 개발하며 좋은 AI 연구자, 개발자가 될 때까지, 되어서도 노력하겠습니다.
+잘 부탁드립니다~
 
 ## Projects
 
-### JavaScript 라이브러리 개발
+<div style="display: flex; gap: 8px;">
 
-- [@devcomfort/text-transcoder](https://www.npmjs.com/package/@devcomfort/text-transcoder): Web Encoding API에서 처리되지 않은 인코딩 변환을 위한 라이브러리 입니다.
-- [blob-to-url](https://www.npmjs.com/package/blob-to-url): Blob / File 객체를 Blob URL 또는 Data URL로 바꿔주는 라이브러리 입니다.
+[![blob-to-url](https://github-readme-stats.vercel.app/api/pin/?username=devcomfort&repo=blob-to-url)](https://github.com/devcomfort/blob-to-url)
 
-## 기술 스택
+[![@devcomfort/text-transcoder](https://github-readme-stats.vercel.app/api/pin/?username=devcomfort&repo=devcomfort-text-transcoder)](https://github.com/devcomfort/devcomfort-text-transcoder)
 
-> 기존에 있던 기술 스택 정보는 모두 [기술 블로그](https://blog.devcomfort.dev/introduction)에 다시 작성하였습니다.
+</div>
+
+## Contacts
+
+- 포트폴리오: https://devcomfort.me
+- 기술 블로그: https://blog.devcomfort.me
+- 기술 블로그(이전): https://devcomfort.dev
+- 이메일: [im@devcomfort.me](mailto:im@devcomfort.me) 또는 [im@devcomfort.dev](mailto:im@devcomfort.dev)
+
+<hr />
+
+## Profiles
+
+![GitHub WidgetBox](https://github-widgetbox.vercel.app/api/profile?username=devcomfort&data=followers,repositories,stars,commits)
+
+<div style="display: flex; gap: 1.5rem; justify-content: center;">
+
+<div style="display: flex; flex-direction: column; width: 27rem;">
+
+![devcomfort's GitHub stats](https://github-readme-stats.vercel.app/api?username=devcomfort&show_icons=true)
+
+<a href="https://git.io/streak-stats"><img src="https://streak-stats.demolab.com?user=devcomfort&theme=transparent" alt="GitHub Streak" /></a>
+
+</div>
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=devcomfort&layout=pie)
+
+</div>
+
+![GitHub WidgetBox](https://github-widgetbox.vercel.app/api/skills?languages=js,ts,html,css,sass,bash,c,python,go,dart,rust,r,markdown,json&frameworks=svelte,next,express,windi,tailwind&libraries=tensorflow,babel,vite,recoil,redux&tools=git,github,npm,yarn,vercel,netlify,nodejs,prettier,nginx,aws,cloudflare,webpack,rollup&software=linux,windows,vscode,notion&includeNames=true)
+
+<!-- puppeteer, tauri -->
+
+<!-- YHYPE, GitHub 방문자 집계 서비스 -->
+<!--https://yhype.me/github/profile-views  -->
+
+![](https://hit.yhype.me/github/profile?user_id=38955618)
