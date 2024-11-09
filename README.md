@@ -1,40 +1,107 @@
-# devcomfort
+<h1 align="center">Hi 👋, I'm devcomfort</h1>
+<h3 align="center">A passionate FullStack Developer and AI Researcher</h3>
+
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=devcomfort&label=Profile%20views&color=0e75b6&style=flat" alt="devcomfort" /> </p>
 
 <!-- TODO: 기술 블로그 완성 후 추가하기 -->
 
-## 소개
+안녕하세요. devcomfort 입니다. 2013년부터 프로그래밍을 시작해서 10년간 프론트엔드, 백엔드, 인프라, AI 등 개발 전반을 공부했습니다. 간간히 외주나 개인 프로젝트를 수행하여 현재는 [@devcomfort/text-transcoder](https://github.com/devcomfort/devcomfort-text-transcoder), [text-transcoder](https://github.com/devcomfort/blob-to-url) 라이브러리를 공개 및 관리하고 있습니다.
 
-안녕하십니까. 풀스택 개발자, 대학생, AI 연구자 devcomfort 입니다.
+동서대학교에서 Tabular Learning을 주제로 연구를 진행 중입니다. 추후 대학원에 진학하여 강화학습, 표현학습, 인과/상관추론, xAI 등을 연구, 공부 하며 AI 전반에 대한 풍부한 이해를 가지고 활동할 수 있는 AI 연구자/개발자가 되는게 목표입니다.
 
-저는 2014년부터 공부를 시작하여 10+년간 프로그래밍 공부하고 있으며,<br>
-지난 10+년간 프론트엔드, 백엔드, 인프라, AI 등을 포함하는 전반의 지식을 획득, 활용하고 있습니다. <br>
-무언가를 탐구하고 아직 구현되지 않은 새로운 개념/기능을 연구하고 구현하는 것에 관심이 많습니다. <br>
-소통, 협력 하에 새로운 기능/프로젝트를 기획하고 실현하는 것도 좋아합니다.
+<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=devcomfort&column=5" alt="devcomfort" /></a> </p>
 
-현재는 동서대학교 소프트웨어학과에 재학하며 AI 연구 멘토링, Tabular Learning에 대한 연구를 진행하고 있으며, 이전에는 웹 기반의 외주를 진행하기도 하였습니다. <Br>
-앞으로는 표현학습, 강화학습, 인과추론, 상관추론, Tabular Generative Model 등 넓은 분야에 관심을 가지고 연구할 생각입니다.<br>
-진로, 소프트웨어 이슈, 협업 등에 대한 질의는 언제나 환영하니 편히 연락주시면 좋겠습니다.
+- 🔭 I’m currently working on [(주)마시는친구들](https://litt.ly/teut) (Aug 2024 ~ Present)
 
-> 소스코드 및 결과물 공개가 불가한 소스코드(외주, 연구 코드)가 많아 공개 레포지토리에는 질 좋은 코드가 많지 않습니다. <br>
-> 궁금하신 분들은 개인적으로 연락주셔도 좋습니다.
+- 🌱 I’m currently learning **PyTorch, Python, TypeScript, and numerous libraries**
 
-![Metrics](https://metrics.lecoq.io/devcomfort?template=classic&base.header=0&gists=1&lines=1&config.timezone=Asia%2FSeoul)
+- 👨‍💻 All of my projects are available at [https://devcomfort.me](https://devcomfort.me)
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs?username=devcomfort&show_icons=true&locale=en&layout=compact&theme=chartreuse-dark" alt="ovi" />
+- 📝 I regularly write articles on [https://blog.devcomfort.me](https://blog.devcomfort.me)
 
-## Contacts
+- 💬 Ask me about **Career, Development issues, also AI**
 
-- Email: [im@devcomfort.me](mailto:im@devcomfort.me)
-- Email: [devcomfort@t-eut.com](mailto:devcomfort@t-eut.com)
+- 📫 How to reach me **im@devcomfort.me**, devcomfort@t-eut.com
 
-## Projects
+## Languages and Tools:
 
-[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=devcomfort&repo=blob-to-url)](https://github.com/devcomfort/blob-to-url)
-[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=devcomfort&repo=devcomfort-text-transcoder)](https://github.com/devcomfort/devcomfort-text-transcoder)
-
-## Contacts
-
-- 포트폴리오: https://devcomfort.me
-- 기술 블로그: https://blog.devcomfort.me
-- 기술 블로그(이전): https://devcomfort.dev
-- 이메일: [im@devcomfort.me](mailto:im@devcomfort.me) 또는 [im@devcomfort.dev](mailto:im@devcomfort.dev)
+<p align="left">
+    <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/>
+    </a>
+    <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/>
+    </a>
+    <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/>
+    </a>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/>
+    </a>
+    <a href="https://reactjs.org/" target="_blank" rel="noreferrer">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/>
+    </a>
+    <a href="https://solidjs.com/" target="_blank" rel="noreferrer">
+        <img src="./icons/solidjs.png" alt="solid" width="40" height="40"/>
+    </a>
+    <a href="https://svelte.dev" target="_blank" rel="noreferrer">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Svelte_Logo.svg" alt="svelte" width="40" height="40"/>
+    </a>
+    <a href="https://vitest.dev/" target="_blank" rel="noreferrer">
+        <img src="./icons/vitest.svg" alt="vitest" width="40" height="40"/>
+    </a>
+    <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/>
+    </a>
+    <a href="https://nodejs.org" target="_blank" rel="noreferrer">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/>
+    </a>
+    <a href="https://expressjs.com" target="_blank" rel="noreferrer">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" width="40" height="40"/>
+    </a>
+    <a href="https://hono.dev/" target="_blank" rel="noreferrer">
+        <img src="./icons/hono-seeklogo.svg" alt="hono" width="40" height="40"/>
+    </a>
+    <a href="https://www.docker.com/" target="_blank" rel="noreferrer">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/>
+    </a>
+    <a href="https://github.com/features/actions" target="_blank" rel="noreferrer">
+        <img src="./icons/github-actions.png" alt="github actions" width="40" height="40"/>
+    </a>
+    <a href="https://tauri.studio/" target="_blank" rel="noreferrer">
+        <img src="./icons/tauri.svg" alt="tauri" width="40" height="40"/>
+    </a>
+    <a href="https://pytest.org/" target="_blank" rel="noreferrer">
+        <img src="./icons/pytest.webp" alt="pytest" width="40" height="40"/>
+    </a>
+    <a href="https://www.chartjs.org" target="_blank" rel="noreferrer">
+        <img src="https://www.chartjs.org/media/logo-title.svg" alt="chartjs" width="40" height="40"/>
+    </a>
+    <a href="https://www.linux.org/" target="_blank" rel="noreferrer">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/>
+    </a>
+    <a href="https://www.postgresql.org" target="_blank" rel="noreferrer">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/>
+    </a>
+    <a href="https://www.python.org" target="_blank" rel="noreferrer">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/>
+    </a>
+    <a href="https://pytorch.org/" target="_blank" rel="noreferrer">
+        <img src="https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg" alt="pytorch" width="40" height="40"/>
+    </a>
+    <a href="https://scikit-learn.org/" target="_blank" rel="noreferrer">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="scikit_learn" width="40" height="40"/>
+    </a>
+    <a href="https://seaborn.pydata.org/" target="_blank" rel="noreferrer">
+        <img src="https://seaborn.pydata.org/_images/logo-mark-lightbg.svg" alt="seaborn" width="40" height="40"/>
+    </a>
+    <a href="https://www.sqlite.org/" target="_blank" rel="noreferrer">
+        <img src="https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg" alt="sqlite" width="40" height="40"/>
+    </a>
+    <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer">
+        <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="40" height="40"/>
+    </a>
+    <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/>
+    </a>
+</p>
