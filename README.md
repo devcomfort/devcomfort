@@ -11,7 +11,7 @@
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=devcomfort&column=5" alt="devcomfort" /></a> </p>
 
-- 🔭 I’m currently working on [(주)마시는친구들](https://litt.ly/teut) (Aug 2024 ~ Present)
+- 🔭 I’m currently working on [(주)마시는친구들](https://litt.ly/teut) 테크리드 (Aug 2024 ~ Present)
 
 - 🌱 I’m currently learning **PyTorch, Python, TypeScript, and numerous libraries**
 
