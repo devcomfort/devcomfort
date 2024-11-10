@@ -5,9 +5,9 @@
 
 <!-- TODO: 기술 블로그 완성 후 추가하기 -->
 
-안녕하세요. devcomfort 입니다. 2013년부터 프로그래밍을 시작해서 10년간 프론트엔드, 백엔드, 인프라, AI 등 개발 전반을 공부했습니다. 간간히 외주나 개인 프로젝트를 수행하여 현재는 [@devcomfort/text-transcoder](https://github.com/devcomfort/devcomfort-text-transcoder), [text-transcoder](https://github.com/devcomfort/blob-to-url) 라이브러리를 공개 및 관리하고 있습니다.
+안녕하십니까 devcomfort 입니다. 2013년부터 프로그래밍을 시작해서 프론트엔드, 백엔드, 인프라 AI 등 개발 분야에 기바 지식을 가지고 있으며, Tabular Learning, 상관/인과추론, 표현학습, 강화학습, 생성모델, 추천모델 등 다양한 개발 및 연구 주제에 큰 관심을 가지고 있습니다.
 
-동서대학교에서 Tabular Learning을 주제로 연구를 진행 중입니다. 추후 대학원에 진학하여 강화학습, 표현학습, 인과/상관추론, xAI 등을 연구, 공부 하며 AI 전반에 대한 풍부한 이해를 가지고 활동할 수 있는 AI 연구자/개발자가 되는게 목표입니다.
+현재 [@devcomfort/text-transcoder](https://github.com/devcomfort/devcomfort-text-transcoder), [text-transcoder](https://github.com/devcomfort/blob-to-url) 라이브러리를 공개 및 관리하고 있고 동서대학교에서 Tabular Learning을 주제로 연구를 진행 중입니다. 추후 대학원에 진학하여 강화학습, 표현학습, 인과/상관추론, xAI 등을 연구, 공부 하며 AI 전반에 대한 풍부한 이해를 가지고 활동할 수 있는 AI 연구자/개발자가 되는게 목표입니다.
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=devcomfort&column=5" alt="devcomfort" /></a> </p>
 
