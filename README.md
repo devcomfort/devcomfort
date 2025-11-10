@@ -9,9 +9,9 @@ Hello, I'm devcomfort. <br>
 I've been programming since 2013, building expertise across frontend, backend, databases, infrastructure, and the broader development landscape. <br>
 I'm currently pursuing a Master's degree in AI Convergence at GIST (Gwangju Institute of Science and Technology), where I'm actively engaged in AI research.
 
-**Primary Research Interests**: RAG (Retrieval-Augmented Generation), Multi-Agent Systems
+**Current Research Focus**: RAG (Retrieval-Augmented Generation), Multi-Agent Systems
 
-I also have experience with domains such as Graph Representation, Graph Neural Networks, Representation Learning, Tabular Representation Learning, and Procedural Content Generation through graduation research, internships, newsletters, and papers. Feel free to reach out regardless of the field—I'm always open to discussions.
+I have experience with Tabular Learning through my undergraduate graduation research and Procedural Content Generation through the GIST CILab internship. Feel free to reach out regardless of the field—I'm always open to discussions.
 
 Over the past 12 years of programming, I've continuously explored ways to innovate both UX and DX. <br>
 As a result, I've recently developed and maintained open-source libraries and CLI tools including [@devcomfort/text-transcoder](https://github.com/devcomfort/devcomfort-text-transcoder), [blob-to-url](https://github.com/devcomfort/blob-to-url), and Ubuntu Disk Toolkit.
@@ -19,7 +19,7 @@ As a result, I've recently developed and maintained open-source libraries and CL
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=devcomfort&column=5" alt="devcomfort" /></a> </p>
 
 - 🔭 Currently working as Tech Lead at [(주)마시는친구들](https://litt.ly/teut) (August 2024 ~ Present)
-- 🎓 **Master's Student in AI Convergence at GIST** (March 2025 ~ Present)
+- 🎓 **Master's Student in AI Convergence at GIST** (September 2025 ~ Present)
 - 🔬 **Completed GIST CILab Internship** (January-February 2025) - Co-authored IPCGRL paper as 2nd author
 - 🌱 Currently learning: **PyTorch, Graph Neural Networks, Reinforcement Learning**
 - 👨‍💻 All projects available at [https://devcomfort.me/projects](https://devcomfort.me/projects)
