@@ -39,6 +39,24 @@ As a result, I've recently developed and maintained open-source libraries and CL
 - **Discovered training data bias**
 - **Optimized data normalization pipeline**: Reduced RAM usage from 502GB+ → 150GB, processing time from 2 hours → 1 hour
 
+## Projects
+
+### Open Source Libraries & Tools
+
+- **[combinatorial-config](https://github.com/devcomfort/combinatorial-config)** - Python library for automatically generating all combinations of experiment configurations. Useful for systematic hyperparameter exploration with Hydra and other configuration management tools.
+
+- **[file_type_detector](https://github.com/devcomfort/file_type_detector)** - Python library for detecting file types based on content analysis and file signatures.
+
+- **[devcomfort-text-transcoder](https://github.com/devcomfort/devcomfort-text-transcoder)** - Lightweight and efficient library for text encoding conversion in Node.js and browser environments. Supports multiple encodings including UTF-8, EUC-KR, and EUC-JP.
+
+- **[is-html-element](https://github.com/devcomfort/is-html-element)** - Utility library for HTML element type checking and validation.
+
+- **[ubuntu-disk-toolkit](https://github.com/devcomfort/ubuntu-disk-toolkit)** - CLI toolkit for Ubuntu disk management and operations (under development).
+
+### Private Projects
+
+- **[chonkie-chunk-utils](https://github.com/devcomfort/chonkie-chunk-utils)** - Utility library for chunk processing and management (private repository).
+
 ## Tech Stack
 
 ### Programming Languages
