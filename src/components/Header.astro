@@ -1,0 +1,16 @@
+---
+import siteConfig from '../data/site-config';
+---
+
+{
+    (siteConfig.title || siteConfig.subtitle) && (
+        <header class="w-full max-w-3xl mx-auto mb-12 sm:mb-16">
+            {siteConfig.title && <p class="text-sm">{siteConfig.title}</p>}
+            {siteConfig.subtitle && (
+                <p class="text-sm">
+                    <span class="italic">{siteConfig.subtitle}</span>
+                </p>
+            )}
+        </header>
+    )
+}

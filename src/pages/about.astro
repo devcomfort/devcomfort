@@ -1,0 +1,46 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { personalInfo } from '../data/personal-info';
+
+const pages = await getCollection('pages');
+const aboutPage = pages.find((p) => p.slug === 'about');
+---
+
+<BaseLayout title="About" description={`${personalInfo.name} — ${personalInfo.affiliation.role} at ${personalInfo.affiliation.company}, ${personalInfo.affiliation.degree} student at ${personalInfo.affiliation.university}`}>
+    <article class="mb-16 sm:mb-24">
+        <header class="mb-8">
+            <h1 class="text-3xl font-serif font-medium leading-tight sm:text-4xl sm:leading-tight">About</h1>
+        </header>
+        {aboutPage ? (
+            <div class="prose prose-dante max-w-none sm:prose-lg">
+                {/* Rendered from content collection */}
+            </div>
+        ) : (
+            <div class="prose prose-dante max-w-none sm:prose-lg">
+                <h2>devcomfort</h2>
+                <p>안녕하세요, devcomfort입니다. 2013년부터 프로그래밍을 시작하여 프론트엔드, 백엔드, 인프라, AI 등 다양한 개발 분야에서 전문성을 쌓아왔습니다.</p>
+                
+                <h3>현재 활동</h3>
+                <ul>
+                    <li><strong>{personalInfo.affiliation.role}</strong> at <a href={personalInfo.affiliation.companyUrl}>{personalInfo.affiliation.company}</a> (August 2024 ~ Present)</li>
+                    <li><strong>{personalInfo.affiliation.degree}</strong> — {personalInfo.affiliation.university} (September 2025 ~ Present)</li>
+                </ul>
+                
+                <h3>연구 관심사</h3>
+                <ul>
+                    <li>RAG (Retrieval-Augmented Generation)</li>
+                    <li>Multi-Agent Systems</li>
+                    <li>Graph Neural Networks</li>
+                    <li>Explainable AI</li>
+                </ul>
+                
+                <h3>연락처</h3>
+                <ul>
+                    <li>Email: <a href={`mailto:${personalInfo.email.personal}`}>{personalInfo.email.personal}</a></li>
+                    <li>GitHub: <a href={personalInfo.social.github}>{personalInfo.social.github}</a></li>
+                </ul>
+            </div>
+        )}
+    </article>
+</BaseLayout>
