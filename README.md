@@ -59,6 +59,61 @@ I'm currently building a **unified personal website** that combines a **tech blo
 | Blog features | `@astrojs/mdx`, RSS (`@astrojs/rss`), Sitemap (`@astrojs/sitemap`) | Built-in Astro integrations |
 | Package manager | [pnpm](https://pnpm.io/) | Disk-efficient, fast installs |
 
+### Navigation Structure
+
+The site navigation is configured in a single `src/data/site-config.ts` file (same pattern as [`devcomfort.me`](https://github.com/devcomfort/devcomfort.me/blob/main/src/data/site-config.ts)) and rendered by `Nav.astro` (header) and `Footer.astro`.
+
+#### Header Navigation (primary)
+
+| Label | URL | Content |
+|---|---|---|
+| Home | `/` | Hero intro, featured projects, recent posts |
+| Blog | `/blog` | Technical articles, research notes, dev logs |
+| Projects | `/projects` | Open-source libraries, portfolio work |
+| Research | `/research` | AI research interests, papers, achievements |
+| About | `/about` | Detailed bio, career history, skills |
+
+#### Footer Navigation (secondary / utility)
+
+| Label | URL | Content |
+|---|---|---|
+| Tags | `/tags` | Blog posts grouped by tag |
+| Contact | `/contact` | Contact form / email |
+
+#### Social Links
+
+| Label | Target |
+|---|---|
+| GitHub | `https://github.com/devcomfort` |
+| Email | `mailto:im@devcomfort.me` |
+| RSS | `/rss.xml` |
+
+#### Astro Site-Config Snippet
+
+```ts
+// src/data/site-config.ts
+headerNavLinks: [
+  { text: 'Home',     href: '/' },
+  { text: 'Blog',     href: '/blog' },
+  { text: 'Projects', href: '/projects' },
+  { text: 'Research', href: '/research' },
+  { text: 'About',    href: '/about' },
+],
+footerNavLinks: [
+  { text: 'Tags',    href: '/tags' },
+  { text: 'Contact', href: '/contact' },
+],
+socialLinks: [
+  { text: 'GitHub', href: 'https://github.com/devcomfort' },
+  { text: 'Email',  href: 'mailto:im@devcomfort.me' },
+  { text: 'RSS',    href: '/rss.xml' },
+],
+```
+
+> 💡 **Design rationale**: `/about` is promoted to the header (previously footer-only in `devcomfort.me`) because the unified site serves as both a blog and a portfolio — visitors should be able to learn about the author in one click. `/research` is a new top-level section reflecting the active AI research work at GIST.
+
+---
+
 ### Reference Repositories
 
 - **[devcomfort/devcomfort.me](https://github.com/devcomfort/devcomfort.me)** — Current portfolio site (Astro + TailwindCSS)
