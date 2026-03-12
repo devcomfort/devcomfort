@@ -1,0 +1,26 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import PostPreview from '../../../components/PostPreview.astro';
+import { getAllTags, getPostsByTag, sortItemsByDateDesc } from '../../../utils/data-utils';
+
+export async function getStaticPaths() {
+    const posts = await getCollection('blog');
+    const tags = getAllTags(posts);
+    return tags.map((tag) => ({
+        params: { tag: tag.slug },
+        props: { tag }
+    }));
+}
+
+const { tag } = Astro.props;
+const allPosts = (await getCollection('blog')).sort(sortItemsByDateDesc);
+const tagPosts = getPostsByTag(allPosts, tag.slug);
+---
+
+<BaseLayout title={`Tag: ${tag.name}`} description={`${tag.name} 태그의 블로그 포스트 목록`}>
+    <div class="mb-16 sm:mb-24">
+        <h1 class="mb-12 text-2xl font-serif italic sm:mb-16 sm:text-3xl">#{tag.name}</h1>
+        {tagPosts.map((post) => <PostPreview post={post} class="mb-10 sm:mb-12" />)}
+    </div>
+</BaseLayout>
