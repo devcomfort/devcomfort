@@ -59,6 +59,43 @@ I'm currently building a **unified personal website** that combines a **tech blo
 | Blog features | `@astrojs/mdx`, RSS (`@astrojs/rss`), Sitemap (`@astrojs/sitemap`) | Built-in Astro integrations |
 | Package manager | [pnpm](https://pnpm.io/) | Disk-efficient, fast installs |
 
+### Required Packages
+
+All packages needed for the unified site, grouped by role. Install them with `pnpm`.
+
+> ⚠️ **Security note**: `astro@4.16.10` (currently in `devcomfort.me`) exposes server source code when sourcemaps are enabled. Use `^4.16.18` minimum, or upgrade to [Astro 5](https://docs.astro.build/en/guides/upgrade-to/v5/) (`^5.0.8`).
+
+#### Install command
+
+```bash
+# Core + integrations + tooling
+pnpm add astro@^4.16.18 \
+  @astrojs/mdx @astrojs/rss @astrojs/sitemap @astrojs/tailwind @astrojs/check \
+  tailwindcss @tailwindcss/typography \
+  sharp marked
+
+# Dev dependencies
+pnpm add -D typescript prettier prettier-plugin-tailwindcss
+```
+
+#### Package reference table
+
+| Package | Role | Notes |
+|---|---|---|
+| `astro` | Framework core | Use `^4.16.18` (sourcemap vuln patched) |
+| `@astrojs/mdx` | MDX/Markdown content | Blog posts, research notes |
+| `@astrojs/rss` | RSS feed (`/rss.xml`) | Subscriber-friendly content syndication |
+| `@astrojs/sitemap` | `sitemap.xml` generation | SEO — submitted to Google/Bing |
+| `@astrojs/tailwind` | TailwindCSS integration | Applies base styles via Astro plugin |
+| `@astrojs/check` | TypeScript type-checking | `astro check` command in CI |
+| `tailwindcss` | CSS utility framework | `^3.4` — utility-first styling |
+| `@tailwindcss/typography` | Prose styles | Essential for blog post body text |
+| `sharp` | Image optimization | Astro's built-in image service backend |
+| `marked` | Markdown → HTML utility | Used in dynamic content rendering |
+| `typescript` | Type system | Shared by Astro, config files |
+| `prettier` | Code formatter | Consistent code style |
+| `prettier-plugin-tailwindcss` | Tailwind class sorting | Auto-sort class names on save |
+
 ### Navigation Structure
 
 The site navigation is configured in a single `src/data/site-config.ts` file (same pattern as [`devcomfort.me`](https://github.com/devcomfort/devcomfort.me/blob/main/src/data/site-config.ts)) and rendered by `Nav.astro` (header) and `Footer.astro`.
@@ -112,6 +149,48 @@ socialLinks: [
 
 > 💡 **Design rationale**: `/about` is promoted to the header (previously footer-only in `devcomfort.me`) because the unified site serves as both a blog and a portfolio — visitors should be able to learn about the author in one click. `/research` is a new top-level section reflecting the active AI research work at GIST.
 
+### Personal Info Configuration
+
+Contact details (email, phone, affiliation, etc.) are managed in a **single source of truth** file so they only ever need to be updated in one place:
+
+```ts
+// src/data/personal-info.ts
+// ✏️  Edit this file to update your contact details across the entire site.
+
+export const personalInfo = {
+  name: 'devcomfort',
+  email: {
+    personal: 'im@devcomfort.me',
+    work: 'devcomfort@t-eut.com',
+  },
+  // phone: '+82-10-XXXX-XXXX',   // uncomment when ready
+  social: {
+    github: 'https://github.com/devcomfort',
+    rss: '/rss.xml',
+  },
+  affiliation: {
+    university: 'GIST (Gwangju Institute of Science and Technology)',
+    degree: "Master's in AI Convergence",
+    company: '(주)마시는친구들',
+    companyUrl: 'https://litt.ly/teut',
+    role: 'Tech Lead',
+  },
+} as const;
+
+export type PersonalInfo = typeof personalInfo;
+```
+
+#### Where it gets imported
+
+| File | What it uses |
+|---|---|
+| `src/data/site-config.ts` | `email.personal` → social link, `social.github` → social link |
+| `src/pages/contact.astro` | `email.*`, `phone` → displayed contact details |
+| `src/pages/about.astro` | `affiliation.*` → career section |
+| `src/components/Hero.astro` | `email.personal` → "Get in Touch" CTA href |
+
+> 💡 **Why `as const`**: marks the object as deeply readonly, so TypeScript infers literal types (e.g. `'im@devcomfort.me'` instead of `string`). This catches typos when the value is used elsewhere.
+
 ---
 
 ### Reference Repositories
@@ -129,7 +208,10 @@ git clone https://github.com/devcomfort/devcomfort.me
 cd devcomfort.me
 pnpm install
 
-# Add any missing integrations
+# Patch Astro to the security-fixed version; add @astrojs/check for type-checking and sharp for image optimization
+pnpm add astro@^4.16.18 @astrojs/check sharp
+
+# Add missing integrations
 pnpm astro add mdx tailwind sitemap rss
 
 # Start dev server
@@ -147,6 +229,10 @@ pnpm create astro@latest
 
 # Add integrations
 pnpm astro add mdx tailwind sitemap rss
+
+# Add remaining packages
+pnpm add @astrojs/check sharp marked
+pnpm add -D @tailwindcss/typography
 
 # Start dev server
 pnpm dev
