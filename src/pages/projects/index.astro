@@ -1,0 +1,19 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ProjectPreview from '../../components/ProjectPreview.astro';
+import { sortItemsByDateDesc } from '../../utils/data-utils';
+
+const allProjects = (await getCollection('projects')).sort(sortItemsByDateDesc);
+---
+
+<BaseLayout title="Projects" description="오픈소스 라이브러리, 포트폴리오 프로젝트">
+    <div class="mb-16 sm:mb-24">
+        <h1 class="mb-12 text-2xl font-serif italic sm:mb-16 sm:text-3xl">Projects</h1>
+        {allProjects.length > 0 ? (
+            allProjects.map((project) => <ProjectPreview project={project} class="mb-10 sm:mb-12" />)
+        ) : (
+            <p>아직 프로젝트가 없습니다.</p>
+        )}
+    </div>
+</BaseLayout>

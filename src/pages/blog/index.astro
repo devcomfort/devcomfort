@@ -1,0 +1,19 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PostPreview from '../../components/PostPreview.astro';
+import { sortItemsByDateDesc } from '../../utils/data-utils';
+
+const allPosts = (await getCollection('blog')).sort(sortItemsByDateDesc);
+---
+
+<BaseLayout title="Blog" description="기술 블로그 — 개발 경험, AI 연구, 오픈소스 프로젝트">
+    <div class="mb-16 sm:mb-24">
+        <h1 class="mb-12 text-2xl font-serif italic sm:mb-16 sm:text-3xl">Blog</h1>
+        {allPosts.length > 0 ? (
+            allPosts.map((post) => <PostPreview post={post} class="mb-10 sm:mb-12" />)
+        ) : (
+            <p>아직 게시물이 없습니다.</p>
+        )}
+    </div>
+</BaseLayout>

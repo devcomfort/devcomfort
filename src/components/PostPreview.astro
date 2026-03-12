@@ -1,0 +1,38 @@
+---
+import { type CollectionEntry } from 'astro:content';
+import FormattedDate from './FormattedDate.astro';
+import { slugify } from '../utils/common-utils';
+
+export type Props = {
+    post: CollectionEntry<'blog'>;
+    class?: string;
+    headingLevel?: 'h2' | 'h3';
+};
+
+const { post, class: className, headingLevel = 'h2' } = Astro.props;
+const { title, publishDate, excerpt, tags = [] } = post.data;
+const TitleTag = headingLevel;
+---
+
+<article class:list={[className]}>
+    <div class="flex flex-wrap items-baseline gap-x-2 gap-y-1 mb-2">
+        <TitleTag class="text-xl font-serif font-medium leading-tight">
+            <a class="hover:underline hover:underline-offset-2" href={`/blog/${post.slug}/`}>{title}</a>
+        </TitleTag>
+        <span class="text-sm">
+            <FormattedDate date={publishDate} />
+        </span>
+    </div>
+    {excerpt && <p class="text-sm leading-relaxed">{excerpt}</p>}
+    {
+        tags.length > 0 && (
+            <div class="mt-2 flex flex-wrap gap-2">
+                {tags.map((tag) => (
+                    <a class="text-xs border border-current py-0.5 px-2 hover:bg-muted" href={`/tags/${slugify(tag)}/`}>
+                        {tag}
+                    </a>
+                ))}
+            </div>
+        )
+    }
+</article>

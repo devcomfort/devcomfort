@@ -18,14 +18,13 @@ As a result, I've recently developed and maintained open-source libraries and CL
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=devcomfort&column=5" alt="devcomfort" /></a> </p>
 
-- 🔭 Currently working as Tech Lead at [(주)마시는친구들](https://litt.ly/teut) (August 2024 ~ Present)
 - 🎓 **Master's Student in AI Convergence at GIST** (September 2025 ~ Present)
 - 🔬 **Completed GIST CILab Internship** (January-February 2025) - Co-authored IPCGRL paper as 2nd author
 - 🌱 Currently learning: **PyTorch, Graph Neural Networks, Reinforcement Learning**
 - 👨‍💻 All projects available at [https://devcomfort.me/projects](https://devcomfort.me/projects)
 - 📝 Blog posts: [https://blog.devcomfort.me](https://blog.devcomfort.me)
 - 💬 Welcome questions about **career, development issues, and AI research**
-- 📫 Contact: **im@devcomfort.me**, **devcomfort@t-eut.com**
+- 📫 Contact: **im@devcomfort.me**
 
 ## Recent Research Achievements
 
@@ -38,6 +37,183 @@ As a result, I've recently developed and maintained open-source libraries and CL
 
 - **Discovered training data bias**
 - **Optimized data normalization pipeline**: Reduced RAM usage from 502GB+ → 150GB, processing time from 2 hours → 1 hour
+
+## 🌐 Personal Website — Scaffolded & In Progress
+
+I'm building a **unified personal website** that combines a **tech blog** and a **portfolio** at [devcomfort.me](https://devcomfort.me).
+
+### Goals
+
+- Merge the standalone blog ([blog.devcomfort.me](https://blog.devcomfort.me)) and portfolio ([devcomfort.me](https://devcomfort.me)) into one cohesive site
+- Share technical articles, research notes, and project showcases in one place
+- Ensure fast page loads, great SEO, and a clean reading experience
+
+### Tech Stack
+
+| Category | Technology | Reason |
+|---|---|---|
+| Framework | [Astro](https://astro.build/) `^5.18.1` | Static-first, island architecture, great for content sites |
+| Styling | [TailwindCSS](https://tailwindcss.com/) `^3.4` | Utility-first, already used in [devcomfort.me](https://github.com/devcomfort/devcomfort.me) |
+| Content | [MDX](https://mdxjs.com/) / Markdown | Flexible content authoring with component embedding |
+| Blog features | `@astrojs/mdx`, RSS (`@astrojs/rss`), Sitemap (`@astrojs/sitemap`) | Built-in Astro integrations |
+| Package manager | [pnpm](https://pnpm.io/) | Disk-efficient, fast installs |
+
+### Packages
+
+All packages used in the unified site, grouped by role. Managed with `pnpm`.
+
+> ⚠️ **Security note**: `astro@4.16.10` (currently in `devcomfort.me`) exposes server source code when sourcemaps are enabled. `astro` versions ≤ 5.15.6 are also vulnerable to a **reflected XSS via the server islands feature** (patched in `5.15.8`). Use `^5.18.1` minimum.
+
+#### Install command
+
+```bash
+# Core + integrations + tooling
+pnpm add astro@^5.18.1 \
+  @astrojs/mdx @astrojs/rss @astrojs/sitemap @astrojs/tailwind @astrojs/check \
+  tailwindcss @tailwindcss/typography \
+  sharp marked
+
+# Dev dependencies
+pnpm add -D typescript prettier prettier-plugin-tailwindcss
+```
+
+#### Package reference table
+
+| Package | Role | Notes |
+|---|---|---|
+| `astro` | Framework core | Use `^5.18.1` (XSS vuln patched in 5.15.8) |
+| `@astrojs/mdx` | MDX/Markdown content | Blog posts, research notes |
+| `@astrojs/rss` | RSS feed (`/rss.xml`) | Subscriber-friendly content syndication |
+| `@astrojs/sitemap` | `sitemap.xml` generation | SEO — submitted to Google/Bing |
+| `@astrojs/tailwind` | TailwindCSS integration | Applies base styles via Astro plugin |
+| `@astrojs/check` | TypeScript type-checking | `astro check` command in CI |
+| `tailwindcss` | CSS utility framework | `^3.4` — utility-first styling |
+| `@tailwindcss/typography` | Prose styles | Essential for blog post body text |
+| `sharp` | Image optimization | Astro's built-in image service backend |
+| `marked` | Markdown → HTML utility | Used in dynamic content rendering |
+| `typescript` | Type system | Shared by Astro, config files |
+| `prettier` | Code formatter | Consistent code style |
+| `prettier-plugin-tailwindcss` | Tailwind class sorting | Auto-sort class names on save |
+
+### Navigation Structure
+
+The site navigation is configured in a single `src/data/site-config.ts` file (same pattern as [`devcomfort.me`](https://github.com/devcomfort/devcomfort.me/blob/main/src/data/site-config.ts)) and rendered by `Nav.astro` (header) and `Footer.astro`.
+
+#### Header Navigation (primary)
+
+| Label | URL | Content |
+|---|---|---|
+| Home | `/` | Hero intro, featured projects, recent posts |
+| Blog | `/blog` | Technical articles, research notes, dev logs |
+| Projects | `/projects` | Open-source libraries, portfolio work |
+| Research | `/research` | AI research interests, papers, achievements |
+| About | `/about` | Detailed bio, career history, skills |
+
+#### Footer Navigation (secondary / utility)
+
+| Label | URL | Content |
+|---|---|---|
+| Tags | `/tags` | Blog posts grouped by tag |
+| Contact | `/contact` | Contact form / email |
+
+#### Social Links
+
+| Label | Target |
+|---|---|
+| GitHub | `https://github.com/devcomfort` |
+| Email | `mailto:im@devcomfort.me` |
+| RSS | `/rss.xml` |
+
+#### Astro Site-Config Snippet
+
+```ts
+// src/data/site-config.ts
+headerNavLinks: [
+  { text: 'Home',     href: '/' },
+  { text: 'Blog',     href: '/blog' },
+  { text: 'Projects', href: '/projects' },
+  { text: 'Research', href: '/research' },
+  { text: 'About',    href: '/about' },
+],
+footerNavLinks: [
+  { text: 'Tags',    href: '/tags' },
+  { text: 'Contact', href: '/contact' },
+],
+socialLinks: [
+  { text: 'GitHub', href: 'https://github.com/devcomfort' },
+  { text: 'Email',  href: 'mailto:im@devcomfort.me' },
+  { text: 'RSS',    href: '/rss.xml' },
+],
+```
+
+> 💡 **Design rationale**: `/about` is promoted to the header (previously footer-only in `devcomfort.me`) because the unified site serves as both a blog and a portfolio — visitors should be able to learn about the author in one click. `/research` is a new top-level section reflecting the active AI research work at GIST.
+
+### Personal Info Configuration
+
+Contact details (email, phone, affiliation, etc.) are managed in a **single source of truth** file so they only ever need to be updated in one place:
+
+```ts
+// src/data/personal-info.ts
+// ✏️  Edit this file to update your contact details across the entire site.
+
+export const personalInfo = {
+  name: 'devcomfort',
+  email: {
+    personal: 'im@devcomfort.me',
+  },
+  // phone: '+82-10-XXXX-XXXX',   // uncomment when ready
+  social: {
+    github: 'https://github.com/devcomfort',
+    rss: '/rss.xml',
+  },
+  affiliation: {
+    university: 'GIST (Gwangju Institute of Science and Technology)',
+    degree: "Master's in AI Convergence",
+  },
+} as const;
+
+export type PersonalInfo = typeof personalInfo;
+```
+
+#### Where it gets imported
+
+| File | What it uses |
+|---|---|
+| `src/data/site-config.ts` | `email.personal` → social link, `social.github` → social link |
+| `src/pages/contact.astro` | `email.personal` → displayed contact details |
+| `src/pages/about.astro` | `affiliation.university`, `affiliation.degree` → current role section |
+| `src/components/Hero.astro` | `email.personal` → "Get in Touch" CTA href |
+
+> 💡 **Why `as const`**: marks the object as deeply readonly, so TypeScript infers literal types (e.g. `'im@devcomfort.me'` instead of `string`). This catches typos when the value is used elsewhere.
+
+---
+
+### Reference Repositories
+
+- **[devcomfort/devcomfort.me](https://github.com/devcomfort/devcomfort.me)** — Current portfolio site (Astro + TailwindCSS)
+- **[devcomfort/blog.devcomfort.dev](https://github.com/devcomfort/blog.devcomfort.dev)** — Previous blog (Next.js + contentlayer)
+
+### Development Setup
+
+```bash
+# Clone and install
+git clone https://github.com/devcomfort/devcomfort
+cd devcomfort
+pnpm install
+
+# Start dev server
+pnpm dev
+
+# Type-check + production build
+pnpm build
+
+# Preview production build locally
+pnpm preview
+```
+
+> **Node.js 18+** is required. Install pnpm via `npm install -g pnpm` if needed.
+
+---
 
 ## Projects
 
