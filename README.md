@@ -39,6 +39,66 @@ As a result, I've recently developed and maintained open-source libraries and CL
 - **Discovered training data bias**
 - **Optimized data normalization pipeline**: Reduced RAM usage from 502GB+ → 150GB, processing time from 2 hours → 1 hour
 
+## 🌐 Personal Website — In Development
+
+I'm currently building a **unified personal website** that combines a **tech blog** and a **portfolio** into a single experience at [devcomfort.me](https://devcomfort.me).
+
+### Goals
+
+- Merge the standalone blog ([blog.devcomfort.me](https://blog.devcomfort.me)) and portfolio ([devcomfort.me](https://devcomfort.me)) into one cohesive site
+- Share technical articles, research notes, and project showcases in one place
+- Ensure fast page loads, great SEO, and a clean reading experience
+
+### Planned Tech Stack
+
+| Category | Technology | Reason |
+|---|---|---|
+| Framework | [Astro](https://astro.build/) | Static-first, island architecture, great for content sites |
+| Styling | [TailwindCSS](https://tailwindcss.com/) | Utility-first, already used in [devcomfort.me](https://github.com/devcomfort/devcomfort.me) |
+| Content | [MDX](https://mdxjs.com/) / Markdown | Flexible content authoring with component embedding |
+| Blog features | `@astrojs/mdx`, RSS (`@astrojs/rss`), Sitemap (`@astrojs/sitemap`) | Built-in Astro integrations |
+| Package manager | [pnpm](https://pnpm.io/) | Disk-efficient, fast installs |
+
+### Reference Repositories
+
+- **[devcomfort/devcomfort.me](https://github.com/devcomfort/devcomfort.me)** — Current portfolio site (Astro + TailwindCSS)
+- **[devcomfort/blog.devcomfort.dev](https://github.com/devcomfort/blog.devcomfort.dev)** — Previous blog (Next.js + contentlayer)
+
+### Development Setup (Quick Start)
+
+**Option A — Extend the existing [devcomfort.me](https://github.com/devcomfort/devcomfort.me) repository** (recommended):
+
+```bash
+# Clone and install
+git clone https://github.com/devcomfort/devcomfort.me
+cd devcomfort.me
+pnpm install
+
+# Add any missing integrations
+pnpm astro add mdx tailwind sitemap rss
+
+# Start dev server
+pnpm dev
+```
+
+**Option B — Scaffold a fresh Astro project**:
+
+```bash
+# Prerequisites: Node.js 18+, pnpm
+npm install -g pnpm
+
+# Scaffold
+pnpm create astro@latest
+
+# Add integrations
+pnpm astro add mdx tailwind sitemap rss
+
+# Start dev server
+pnpm dev
+```
+
+---
+
 ## Projects
 
 ### Open Source Libraries & Tools
