@@ -18,14 +18,13 @@ As a result, I've recently developed and maintained open-source libraries and CL
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=devcomfort&column=5" alt="devcomfort" /></a> </p>
 
-- 🔭 Currently working as Tech Lead at [(주)마시는친구들](https://litt.ly/teut) (August 2024 ~ Present)
 - 🎓 **Master's Student in AI Convergence at GIST** (September 2025 ~ Present)
 - 🔬 **Completed GIST CILab Internship** (January-February 2025) - Co-authored IPCGRL paper as 2nd author
 - 🌱 Currently learning: **PyTorch, Graph Neural Networks, Reinforcement Learning**
 - 👨‍💻 All projects available at [https://devcomfort.me/projects](https://devcomfort.me/projects)
 - 📝 Blog posts: [https://blog.devcomfort.me](https://blog.devcomfort.me)
 - 💬 Welcome questions about **career, development issues, and AI research**
-- 📫 Contact: **im@devcomfort.me**, **devcomfort@t-eut.com**
+- 📫 Contact: **im@devcomfort.me**
 
 ## Recent Research Achievements
 
@@ -39,9 +38,9 @@ As a result, I've recently developed and maintained open-source libraries and CL
 - **Discovered training data bias**
 - **Optimized data normalization pipeline**: Reduced RAM usage from 502GB+ → 150GB, processing time from 2 hours → 1 hour
 
-## 🌐 Personal Website — In Development
+## 🌐 Personal Website — Scaffolded & In Progress
 
-I'm currently building a **unified personal website** that combines a **tech blog** and a **portfolio** into a single experience at [devcomfort.me](https://devcomfort.me).
+I'm building a **unified personal website** that combines a **tech blog** and a **portfolio** at [devcomfort.me](https://devcomfort.me).
 
 ### Goals
 
@@ -49,19 +48,19 @@ I'm currently building a **unified personal website** that combines a **tech blo
 - Share technical articles, research notes, and project showcases in one place
 - Ensure fast page loads, great SEO, and a clean reading experience
 
-### Planned Tech Stack
+### Tech Stack
 
 | Category | Technology | Reason |
 |---|---|---|
-| Framework | [Astro](https://astro.build/) | Static-first, island architecture, great for content sites |
-| Styling | [TailwindCSS](https://tailwindcss.com/) | Utility-first, already used in [devcomfort.me](https://github.com/devcomfort/devcomfort.me) |
+| Framework | [Astro](https://astro.build/) `^5.18.1` | Static-first, island architecture, great for content sites |
+| Styling | [TailwindCSS](https://tailwindcss.com/) `^3.4` | Utility-first, already used in [devcomfort.me](https://github.com/devcomfort/devcomfort.me) |
 | Content | [MDX](https://mdxjs.com/) / Markdown | Flexible content authoring with component embedding |
 | Blog features | `@astrojs/mdx`, RSS (`@astrojs/rss`), Sitemap (`@astrojs/sitemap`) | Built-in Astro integrations |
 | Package manager | [pnpm](https://pnpm.io/) | Disk-efficient, fast installs |
 
-### Required Packages
+### Packages
 
-All packages needed for the unified site, grouped by role. Install them with `pnpm`.
+All packages used in the unified site, grouped by role. Managed with `pnpm`.
 
 > ⚠️ **Security note**: `astro@4.16.10` (currently in `devcomfort.me`) exposes server source code when sourcemaps are enabled. `astro` versions ≤ 5.15.6 are also vulnerable to a **reflected XSS via the server islands feature** (patched in `5.15.8`). Use `^5.18.1` minimum.
 
@@ -161,7 +160,6 @@ export const personalInfo = {
   name: 'devcomfort',
   email: {
     personal: 'im@devcomfort.me',
-    work: 'devcomfort@t-eut.com',
   },
   // phone: '+82-10-XXXX-XXXX',   // uncomment when ready
   social: {
@@ -171,9 +169,6 @@ export const personalInfo = {
   affiliation: {
     university: 'GIST (Gwangju Institute of Science and Technology)',
     degree: "Master's in AI Convergence",
-    company: '(주)마시는친구들',
-    companyUrl: 'https://litt.ly/teut',
-    role: 'Tech Lead',
   },
 } as const;
 
@@ -185,8 +180,8 @@ export type PersonalInfo = typeof personalInfo;
 | File | What it uses |
 |---|---|
 | `src/data/site-config.ts` | `email.personal` → social link, `social.github` → social link |
-| `src/pages/contact.astro` | `email.*`, `phone` → displayed contact details |
-| `src/pages/about.astro` | `affiliation.*` → career section |
+| `src/pages/contact.astro` | `email.personal` → displayed contact details |
+| `src/pages/about.astro` | `affiliation.university`, `affiliation.degree` → current role section |
 | `src/components/Hero.astro` | `email.personal` → "Get in Touch" CTA href |
 
 > 💡 **Why `as const`**: marks the object as deeply readonly, so TypeScript infers literal types (e.g. `'im@devcomfort.me'` instead of `string`). This catches typos when the value is used elsewhere.
@@ -198,45 +193,25 @@ export type PersonalInfo = typeof personalInfo;
 - **[devcomfort/devcomfort.me](https://github.com/devcomfort/devcomfort.me)** — Current portfolio site (Astro + TailwindCSS)
 - **[devcomfort/blog.devcomfort.dev](https://github.com/devcomfort/blog.devcomfort.dev)** — Previous blog (Next.js + contentlayer)
 
-### Development Setup (Quick Start)
-
-**Option A — Extend the existing [devcomfort.me](https://github.com/devcomfort/devcomfort.me) repository** (recommended):
+### Development Setup
 
 ```bash
 # Clone and install
-git clone https://github.com/devcomfort/devcomfort.me
-cd devcomfort.me
+git clone https://github.com/devcomfort/devcomfort
+cd devcomfort
 pnpm install
 
-# Patch Astro to the security-fixed version; add @astrojs/check for type-checking and sharp for image optimization
-pnpm add astro@^5.18.1 @astrojs/check sharp
-
-# Add missing integrations
-pnpm astro add mdx tailwind sitemap rss
-
 # Start dev server
 pnpm dev
+
+# Type-check + production build
+pnpm build
+
+# Preview production build locally
+pnpm preview
 ```
 
-**Option B — Scaffold a fresh Astro project**:
-
-```bash
-# Prerequisites: Node.js 18+, pnpm
-npm install -g pnpm
-
-# Scaffold
-pnpm create astro@latest
-
-# Add integrations
-pnpm astro add mdx tailwind sitemap rss
-
-# Add remaining packages
-pnpm add @astrojs/check sharp marked
-pnpm add -D @tailwindcss/typography
-
-# Start dev server
-pnpm dev
-```
+> **Node.js 18+** is required. Install pnpm via `npm install -g pnpm` if needed.
 
 ---
 
