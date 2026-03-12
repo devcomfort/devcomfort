@@ -63,13 +63,13 @@ I'm currently building a **unified personal website** that combines a **tech blo
 
 All packages needed for the unified site, grouped by role. Install them with `pnpm`.
 
-> ⚠️ **Security note**: `astro@4.16.10` (currently in `devcomfort.me`) exposes server source code when sourcemaps are enabled. Use `^4.16.18` minimum, or upgrade to [Astro 5](https://docs.astro.build/en/guides/upgrade-to/v5/) (`^5.0.8`).
+> ⚠️ **Security note**: `astro@4.16.10` (currently in `devcomfort.me`) exposes server source code when sourcemaps are enabled. `astro` versions ≤ 5.15.6 are also vulnerable to a **reflected XSS via the server islands feature** (patched in `5.15.8`). Use `^5.18.1` minimum.
 
 #### Install command
 
 ```bash
 # Core + integrations + tooling
-pnpm add astro@^4.16.18 \
+pnpm add astro@^5.18.1 \
   @astrojs/mdx @astrojs/rss @astrojs/sitemap @astrojs/tailwind @astrojs/check \
   tailwindcss @tailwindcss/typography \
   sharp marked
@@ -82,7 +82,7 @@ pnpm add -D typescript prettier prettier-plugin-tailwindcss
 
 | Package | Role | Notes |
 |---|---|---|
-| `astro` | Framework core | Use `^4.16.18` (sourcemap vuln patched) |
+| `astro` | Framework core | Use `^5.18.1` (XSS vuln patched in 5.15.8) |
 | `@astrojs/mdx` | MDX/Markdown content | Blog posts, research notes |
 | `@astrojs/rss` | RSS feed (`/rss.xml`) | Subscriber-friendly content syndication |
 | `@astrojs/sitemap` | `sitemap.xml` generation | SEO — submitted to Google/Bing |
@@ -209,7 +209,7 @@ cd devcomfort.me
 pnpm install
 
 # Patch Astro to the security-fixed version; add @astrojs/check for type-checking and sharp for image optimization
-pnpm add astro@^4.16.18 @astrojs/check sharp
+pnpm add astro@^5.18.1 @astrojs/check sharp
 
 # Add missing integrations
 pnpm astro add mdx tailwind sitemap rss
