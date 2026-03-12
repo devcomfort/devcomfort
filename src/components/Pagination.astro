@@ -1,0 +1,38 @@
+---
+export type Props = {
+    page: {
+        url: {
+            prev?: string;
+            next?: string;
+        };
+        currentPage: number;
+        lastPage: number;
+    };
+};
+
+const { page } = Astro.props;
+---
+
+{
+    page.lastPage > 1 && (
+        <div class="mt-12 flex items-center justify-between sm:mt-16">
+            {page.url.prev ? (
+                <a class="hover:underline hover:underline-offset-2" href={page.url.prev}>
+                    ← Newer Posts
+                </a>
+            ) : (
+                <span />
+            )}
+            <span class="text-sm">
+                Page {page.currentPage} of {page.lastPage}
+            </span>
+            {page.url.next ? (
+                <a class="hover:underline hover:underline-offset-2" href={page.url.next}>
+                    Older Posts →
+                </a>
+            ) : (
+                <span />
+            )}
+        </div>
+    )
+}
