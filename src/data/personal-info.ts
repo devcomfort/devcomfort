@@ -4,8 +4,7 @@
 export const personalInfo = {
     name: 'devcomfort',
     email: {
-        personal: 'im@devcomfort.me',
-        work: 'devcomfort@t-eut.com'
+        personal: 'im@devcomfort.me'
     },
     // phone: '+82-10-XXXX-XXXX',   // uncomment when ready
     social: {
@@ -14,10 +13,7 @@ export const personalInfo = {
     },
     affiliation: {
         university: 'GIST (Gwangju Institute of Science and Technology)',
-        degree: "Master's in AI Convergence",
-        company: '(주)마시는친구들',
-        companyUrl: 'https://litt.ly/teut',
-        role: 'Tech Lead'
+        degree: "Master's in AI Convergence"
     }
 } as const;
 

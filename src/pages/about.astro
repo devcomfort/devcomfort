@@ -7,7 +7,7 @@ const pages = await getCollection('pages');
 const aboutPage = pages.find((p) => p.slug === 'about');
 ---
 
-<BaseLayout title="About" description={`${personalInfo.name} — ${personalInfo.affiliation.role} at ${personalInfo.affiliation.company}, ${personalInfo.affiliation.degree} student at ${personalInfo.affiliation.university}`}>
+<BaseLayout title="About" description={`${personalInfo.name} — ${personalInfo.affiliation.degree} student at ${personalInfo.affiliation.university}`}>
     <article class="mb-16 sm:mb-24">
         <header class="mb-8">
             <h1 class="text-3xl font-serif font-medium leading-tight sm:text-4xl sm:leading-tight">About</h1>
@@ -23,7 +23,6 @@ const aboutPage = pages.find((p) => p.slug === 'about');
                 
                 <h3>현재 활동</h3>
                 <ul>
-                    <li><strong>{personalInfo.affiliation.role}</strong> at <a href={personalInfo.affiliation.companyUrl}>{personalInfo.affiliation.company}</a> (August 2024 ~ Present)</li>
                     <li><strong>{personalInfo.affiliation.degree}</strong> — {personalInfo.affiliation.university} (September 2025 ~ Present)</li>
                 </ul>
                 
