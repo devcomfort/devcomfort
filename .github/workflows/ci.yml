@@ -54,7 +54,8 @@ jobs:
           checkFragments: true
           concurrency: 50
           skip: |
-            ^https?://example\.com
+            ^https?://www\.npmjs\.com
+            ^https?://devcomfort\.me
             ^mailto:
 
   deploy:
