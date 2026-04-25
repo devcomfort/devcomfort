@@ -5,7 +5,6 @@ publishDate: '2026-04-10'
 isFeatured: false
 tags: ['python', 'library', 'opensource', 'file-detection', 'magika']
 sourceUrl: 'https://github.com/devcomfort-labs/filetype_detector'
-projectUrl: 'https://devcomfort-research.github.io/filetype_detector/'
 ---
 
 # filetype-detector
