@@ -3,7 +3,7 @@ title: 'AI 시대의 범주형 데이터 처리: Entity Embedding과 Cat2Vec의 
 description: '학부 졸업 연구 (2025년 2월) — One-hot encoding, Entity Embedding, Cat2Vec 세 가지 범주형 인코딩 기법을 Rossmann 데이터셋에서 비교 평가. ARI 기준 임베딩 기법이 One-hot 대비 완벽한 군집화 성능(1.0) 달성.'
 publishDate: '2025-02-01'
 isFeatured: true
-tags: ['tabular-learning', 'embedding', 'entity-embedding', 'cat2vec', 'categorical-data']
+tags: ['tabular-learning', 'tabular-ml', 'embedding', 'entity-embedding', 'cat2vec', 'categorical-data', 'pytorch']
 paperUrl: '/papers/Handling Categorical Data in the AI Era - Analyzing the Effectiveness of Entity Embedding and Cat2Vec.pdf'
 ---
 
