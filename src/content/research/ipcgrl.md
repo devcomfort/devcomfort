@@ -3,7 +3,7 @@ title: 'IPCGRL: Language-Instructed Reinforcement Learning for Procedural Level 
 description: 'IEEE CoG 2025 Accept — 자연어 지시 기반 강화학습으로 게임 레벨을 절차적으로 생성하는 방법론.'
 publishDate: '2025-03-15'
 isFeatured: false
-tags: ['reinforcement-learning', 'procedural-content-generation', 'nlp', 'game-ai', 'bert']
+tags: ['reinforcement-learning', 'procedural-content-generation', 'nlp', 'game-ai', 'bert', 'llm']
 paperUrl: 'https://arxiv.org/abs/2503.12358'
 ---
 
