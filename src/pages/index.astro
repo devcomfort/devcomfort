@@ -2,45 +2,142 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Button from '../components/Button.astro';
-import Hero from '../components/Hero.astro';
+import PaperBadge from '../components/PaperBadge.astro';
 import PostPreview from '../components/PostPreview.astro';
 import ProjectPreview from '../components/ProjectPreview.astro';
 import siteConfig from '../data/site-config';
 import { sortItemsByDateDesc } from '../utils/data-utils';
+import { personalInfo } from '../data/personal-info';
 
 const posts = (await getCollection('blog')).sort(sortItemsByDateDesc);
 const featuredPosts = posts.filter(({ data }) => data.isFeatured);
 
 const projects = (await getCollection('projects')).sort(sortItemsByDateDesc);
 const featuredProjects = projects.filter(({ data }) => data.isFeatured);
+
+const research = (await getCollection('research')).sort(sortItemsByDateDesc);
+const featuredResearch = research.filter(({ data }) => data.isFeatured);
 ---
 
 <BaseLayout description={siteConfig.description} image={siteConfig.image}>
-    <Hero />
-    {
-        featuredProjects?.length > 0 && (
-            <div class="mb-16 sm:mb-24">
-                <h2 class="mb-12 text-xl font-serif italic sm:mb-16 sm:text-2xl">Projects</h2>
-                {featuredProjects.map((project) => (
-                    <ProjectPreview project={project} class="mb-10 sm:mb-12" headingLevel="h3" />
-                ))}
-                <div class="mt-12 sm:mt-16">
-                    <Button href="/projects">View All Projects</Button>
+    <div class="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-12">
+        <!-- Main Content -->
+        <div>
+            {
+                (featuredResearch?.length > 0 || research?.length > 0) && (
+                    <section class="mb-12">
+                        <h2 class="font-sans text-xs font-semibold tracking-[0.1em] uppercase text-text-tertiary mb-6 pb-3 border-b border-border-main flex items-center gap-3 before:font-mono before:text-xs before:text-accent before:content-['01']">
+                            Researches
+                        </h2>
+                        <div class="flex flex-col gap-8">
+                            {(featuredResearch?.length > 0 ? featuredResearch : research.slice(0, 3)).map((item) => (
+                                <article class="bg-bg-elevated border border-border-main rounded-sm p-8 shadow-sm hover:shadow-md hover:border-border-strong transition-all">
+                                    <h3 class="font-serif text-xl font-semibold leading-tight mb-3">
+                                        <a class="text-main hover:text-accent hover:underline hover:decoration-1 hover:underline-offset-2" href={`/research/${item.slug}/`}>{item.data.title}</a>
+                                    </h3>
+                                    {item.data.description && <p class="font-serif text-base leading-relaxed text-text-secondary mb-4 pl-4 border-l-2 border-accent/8">{item.data.description}</p>}
+                                    {
+                                        item.data.tags.length > 0 && (
+                                            <div class="flex flex-wrap gap-2">
+                                                {item.data.tags.map((tag) => (
+                                                    <span class="font-mono text-xs text-text-secondary bg-bg-muted border border-border-main px-3 py-0.5 rounded-sm">{tag}</span>
+                                                ))}
+                                            </div>
+                                        )
+                                    }
+                                    <div class="mt-4 flex gap-4">
+                                        {item.data.paperUrl && <PaperBadge url={item.data.paperUrl} />}
+                                    </div>
+                                </article>
+                            ))}
+                        </div>
+                        <div class="mt-8">
+                            <Button href="/research">View All Research</Button>
+                        </div>
+                    </section>
+                )
+            }
+            {
+                projects?.length > 0 && (
+                    <section class="mb-12">
+                        <h2 class="font-sans text-xs font-semibold tracking-[0.1em] uppercase text-text-tertiary mb-6 pb-3 border-b border-border-main flex items-center gap-3 before:font-mono before:text-xs before:text-accent before:content-['02']">
+                            Projects
+                        </h2>
+                        {projects.map((project) => (
+                            <ProjectPreview project={project} class="mb-0" headingLevel="h3" />
+                        ))}
+                        <div class="mt-8">
+                            <Button href="/projects">View All Projects</Button>
+                        </div>
+                    </section>
+                )
+            }
+            {
+                featuredPosts?.length > 0 && (
+                    <section class="mb-12">
+                        <h2 class="font-sans text-xs font-semibold tracking-[0.1em] uppercase text-text-tertiary mb-6 pb-3 border-b border-border-main flex items-center gap-3 before:font-mono before:text-xs before:text-accent before:content-['03']">
+                            Recent Writing
+                        </h2>
+                        {featuredPosts.map((post) => (
+                            <PostPreview post={post} class="mb-0" headingLevel="h3" />
+                        ))}
+                        <div class="mt-8">
+                            <Button href="/blog">View All Posts</Button>
+                        </div>
+                    </section>
+                )
+            }
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="flex flex-col gap-10">
+            <!-- Profile Card -->
+            <div class="bg-bg-elevated border border-border-main rounded-sm p-6 shadow-sm">
+                <div class="w-16 h-16 rounded-full bg-bg-muted border-2 border-border-main flex items-center justify-center font-serif text-xl font-semibold text-text-secondary mb-4">
+                    dc
+                </div>
+                <h3 class="font-serif text-lg font-semibold mb-1">devcomfort</h3>
+                <p class="font-sans text-sm text-text-secondary leading-relaxed mb-4">
+                    Fullstack Developer &amp; AI Researcher<br>
+                    {personalInfo.affiliation.university}
+                </p>
+                <div class="flex flex-col gap-2">
+                    <a href={personalInfo.social.github} class="font-sans text-sm text-accent inline-flex items-center gap-2 hover:underline" target="_blank" rel="noopener noreferrer">
+                        <svg class="w-4 h-4 opacity-70" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 2.662 1.013.774-.216 1.605-.322 2.436-.328.831.006 1.662.112 2.436.328 1.653-1.336 2.659-1.013 2.659-1.013.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                        GitHub
+                    </a>
+                    <a href={`mailto:${personalInfo.email.personal}`} class="font-sans text-sm text-accent inline-flex items-center gap-2 hover:underline">
+                        <svg class="w-4 h-4 opacity-70" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                        Email
+                    </a>
                 </div>
             </div>
-        )
-    }
-    {
-        featuredPosts?.length > 0 && (
-            <div class="mb-16 sm:mb-24">
-                <h2 class="mb-12 text-xl font-serif italic sm:mb-16 sm:text-2xl">Writing</h2>
-                {featuredPosts.map((post) => (
-                    <PostPreview post={post} class="mb-10 sm:mb-12" headingLevel="h3" />
-                ))}
-                <div class="mt-12 sm:mt-16">
-                    <Button href="/blog">View All Posts</Button>
+
+            <!-- Research Interests -->
+            <div>
+                <h3 class="font-sans text-xs font-semibold tracking-[0.1em] uppercase text-text-tertiary mb-4 pb-2 border-b border-border-main">
+                    Research Interests
+                </h3>
+                <ul class="list-none flex flex-col gap-2">
+                    <li class="font-serif text-base text-text-secondary pl-4 relative before:content-['—'] before:absolute before:left-0 before:text-text-tertiary">LLM (Large Language Models)</li>
+                    <li class="font-serif text-base text-text-secondary pl-4 relative before:content-['—'] before:absolute before:left-0 before:text-text-tertiary">Multi-Agent Systems</li>
+                    <li class="font-serif text-base text-text-secondary pl-4 relative before:content-['—'] before:absolute before:left-0 before:text-text-tertiary">Reinforcement Learning</li>
+                </ul>
+            </div>
+
+            <!-- Keywords -->
+            <div>
+                <h3 class="font-sans text-xs font-semibold tracking-[0.1em] uppercase text-text-tertiary mb-4 pb-2 border-b border-border-main">
+                    Keywords
+                </h3>
+                <div class="flex flex-wrap gap-2">
+                    {['reinforcement-learning', 'pcg', 'llm', 'game-ai', 'entity-embedding', 'tabular-ml', 'python', 'pytorch'].map((tag) => (
+                        <a class="font-mono text-xs text-text-secondary bg-bg-muted border border-border-main px-3 py-0.5 rounded-sm hover:bg-accent/8 hover:border-accent hover:text-accent no-underline transition-colors" href={`/tags/${tag}/`}>
+                            {tag}
+                        </a>
+                    ))}
                 </div>
             </div>
-        )
-    }
+        </aside>
+    </div>
 </BaseLayout>

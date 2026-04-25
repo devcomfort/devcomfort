@@ -2,6 +2,7 @@
 import { type CollectionEntry, getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import FormattedDate from '../../components/FormattedDate.astro';
+import PaperBadge from '../../components/PaperBadge.astro';
 import { slugify } from '../../utils/common-utils';
 
 export async function getStaticPaths() {
@@ -22,24 +23,22 @@ const { Content } = await item.render();
 ---
 
 <BaseLayout title={seo?.title ?? title} description={seo?.description ?? description ?? ''} image={seo?.image}>
-    <article class="mb-16 sm:mb-24">
+    <article class="max-w-[720px]">
         <header class="mb-8">
-            <h1 class="text-3xl font-serif font-medium leading-tight sm:text-4xl sm:leading-tight">{title}</h1>
-            <div class="mt-4 text-sm">
+            <h1 class="font-serif text-3xl font-semibold leading-tight text-main sm:text-[1.875rem] sm:leading-tight">{title}</h1>
+            <time class="font-mono text-xs text-text-tertiary mt-4 block">
                 <FormattedDate date={publishDate} />
-            </div>
+            </time>
             {paperUrl && (
                 <div class="mt-4">
-                    <a class="text-sm hover:underline hover:underline-offset-2" href={paperUrl} target="_blank" rel="noopener noreferrer">
-                        Read Paper ↗
-                    </a>
+                    <PaperBadge url={paperUrl} />
                 </div>
             )}
             {
                 tags.length > 0 && (
                     <div class="mt-4 flex flex-wrap gap-2">
                         {tags.map((tag) => (
-                            <a class="text-xs border border-current py-0.5 px-2 hover:bg-muted" href={`/tags/${slugify(tag)}/`}>
+                            <a class="font-mono text-xs text-text-secondary bg-bg-muted border border-border-main px-3 py-0.5 rounded-sm hover:bg-accent/8 hover:border-accent hover:text-accent no-underline transition-colors" href={`/tags/${slugify(tag)}/`}>
                                 {tag}
                             </a>
                         ))}
