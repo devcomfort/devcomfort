@@ -3,8 +3,12 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getAllTags, sortItemsByDateDesc } from '../../utils/data-utils';
 
-const posts = (await getCollection('blog')).sort(sortItemsByDateDesc);
-const tags = getAllTags(posts);
+const [posts, projects, research] = await Promise.all([
+    getCollection('blog'),
+    getCollection('projects'),
+    getCollection('research'),
+]);
+const tags = getAllTags([...posts, ...projects, ...research]);
 ---
 
 <BaseLayout title="Tags" description="블로그 포스트 태그 목록">
