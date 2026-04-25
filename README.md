@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://readme-typing-svg.demolab.com">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=6E9FE0&center=true&vCenter=true&width=500&lines=Fullstack+Developer+%26+AI+Researcher;LLM+%2F+Multi-Agent+System;2013%EB%85%84%EB%B6%80%ED%84%B0+%EC%BD%94%EB%93%9C%EB%A5%BC+%EC%A7%9C%EC%98%A8+12%EB%85%84+%EC%B0%A8" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=6E9FE0&center=true&vCenter=true&width=500&lines=Fullstack+Developer;AI+Researcher+%40+GIST;LLM+%26+Multi-Agent+System;Open+Source+Contributor" alt="Typing SVG" />
   </a>
 </p>
 
@@ -30,7 +30,7 @@
 
 <p align="left">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=ts,js,python,react,svelte,tailwind,nodejs,fastapi,postgresql,docker,pytorch,git&theme=dark&perline=6" />
+    <img src="https://skillicons.dev/icons?i=ts,js,python,react,svelte,tailwind,nodejs,fastapi,sqlite,duckdb,chromadb,kuzudb,litellm,vscode,ubuntu,docker,git&theme=dark&perline=6" />
   </a>
 </p>
 
