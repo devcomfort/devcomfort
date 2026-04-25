@@ -3,7 +3,7 @@ title: 'ollama-models'
 description: 'Ollama 레지스트리에서 모델 검색 및 태그 목록을 조회할 수 있는 REST API와 TypeScript/Python 클라이언트 라이브러리.'
 publishDate: '2026-04-08'
 isFeatured: false
-tags: ['typescript', 'python', 'library', 'opensource', 'ollama', 'cloudflare-workers']
+tags: ['data-collection', 'python', 'typescript', 'api', 'llm']
 sourceUrl: 'https://github.com/devcomfort/ollama-models'
 ---
 

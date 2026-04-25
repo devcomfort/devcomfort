@@ -246,5 +246,38 @@ sourceUrl: 'https://github.com/...'  # 소스코드
 
 - `publishDate`: 반드시 실제 작성/배포일. 미래 날짜 금지.
 - `isFeatured`: 홈페이지에 표시할 항목만 `true`. 중복 방지를 위해 각 컬렉션당 최대 3개 권장.
-- `tags`: 소문자, kebab-case. 예: `reinforcement-learning`, `procedural-content-generation`
 - `paperUrl`: 상대 경로(`/papers/...`) 또는 절대 URL(`https://arxiv.org/...`) 허용
+
+### 7. Tags 레이어 규칙
+
+`tags` 배열은 **대분류 | 언어 | 그 외** 순서로 정렬한다. 각 레이어 내에서는 알파벳순.
+
+#### 레이어 정의
+
+| 레이어 | 태그 | 설명 |
+|---|---|---|
+| **대분류** | `data-collection`, `data-preprocessing`, `research` | 프로젝트의 속하는 분야 |
+| **언어** | `python`, `typescript` | 주 구현 언어 |
+| **그 외** | 그 외 모든 태그 | 도메인·목적·기술 관련 태그 |
+
+#### 규칙
+
+1. **대분류 태그는 해당 프로젝트가 속하는 분야에만 부여** — 모든 프로젝트에 공통으로 들어가는 태그(`library`, `opensource` 등)는 금지
+2. **언어 태그는 주 구현 언어만** — TS 프로젝트에 `javascript`를 중복 부여하지 않음
+3. **도구명·프레임워크명 금지** — `magika`, `llama-index`, `bert`, `claude-code` 등 구현 디테일은 태그로 쓰지 않음
+4. **의미 중복 금지** — `PCG`/`pcg`/`procedural-content-generation` 중 하나만, `tabular-learning`/`tabular-ml` 중 하나만
+5. **정렬 순서**: 대분류 → 언어 → 그 외, 각 레이어 내 알파벳순
+
+#### 예시
+
+```yaml
+# ✅ 올바름: 대분류 → 언어 → 그 외
+tags: ['data-preprocessing', 'python', 'document-conversion', 'hwp']
+tags: ['research', 'python', 'combinatorial', 'experiment-config']
+
+# ❌ 잘못됨: 순서 무시
+tags: ['hwp', 'document-conversion', 'python', 'data-preprocessing']
+
+# ❌ 잘못됨: 공통 태그 중복
+tags: ['python', 'library', 'opensource', 'filetype']
+```

@@ -2,7 +2,7 @@
 title: 'GIST CILab 인턴십 — IPCGRL 연구 참여 회고'
 excerpt: 'GIST CILab에서 강화학습 기반 절차적 레벨 생성 연구에 참여하며 겪은 기술적 도전과 기여를 정리합니다.'
 publishDate: '2025-03-01'
-tags: ['research', 'reinforcement-learning', 'PCG', 'internship']
+tags: ['procedural-content-generation', 'reinforcement-learning', 'internship']
 ---
 
 2025년 1~2월, GIST CILab에서 약 두 달간 인턴십을 수행했습니다. IEEE CoG 2025에 Accept된 논문 [IPCGRL](https://arxiv.org/abs/2503.12358)의 저자 중 한 명으로 참여했습니다.
