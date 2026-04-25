@@ -60,7 +60,7 @@ const siteConfig: SiteConfig = {
         { text: 'RSS', href: personalInfo.social.rss }
     ],
     hero: {
-        text: `안녕하세요, devcomfort입니다. 2013년부터 프로그래밍을 시작하여 프론트엔드, 백엔드, 인프라, AI 등 다양한 개발 분야에 깊이 있는 지식을 쌓아왔습니다. 현재 [${personalInfo.affiliation.university}](https://www.gist.ac.kr)에서 ${personalInfo.affiliation.degree} 과정 중이며, AI 연구와 오픈소스 개발에 집중하고 있습니다.`,
+        text: `안녕하세요, devcomfort입니다. 2013년부터 프로그래밍을 시작하여 프론트엔드, 백엔드, 인프라, AI 등 다양한 개발 분야에 깊이 있는 지식을 쌓아왔습니다. 현재 [${personalInfo.affiliation.university}](https://www.gist.ac.kr)에서 ${personalInfo.affiliation.degree} 과정 중이며, LLM과 Multi-Agent System을 중심으로 연구하고 있습니다.`,
         actions: [
             { text: 'Get in Touch', href: '/contact' },
             { text: 'About Me', href: '/about' }
