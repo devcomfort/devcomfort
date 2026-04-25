@@ -28,7 +28,7 @@
 
 ## 🛠 기술 스택
 
-<p align="left">
+<p align="center">
   <a href="https://skillicons.dev">
     <img src="https://skillicons.dev/icons?i=ts,js,python,react,svelte,solidjs,tailwind,nodejs,fastapi,sqlite,duckdb,chromadb,kuzudb,litellm,vscode,ubuntu,docker,git&theme=dark&perline=6" />
   </a>
