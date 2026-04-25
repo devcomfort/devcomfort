@@ -10,11 +10,11 @@ const { class: className, href, type = 'button' } = Astro.props;
 
 {
     href ? (
-        <a class:list={['inline-flex items-center justify-center gap-2 border border-current py-2 px-6 text-sm hover:bg-muted', className]} href={href}>
+        <a class:list={['font-sans text-sm font-medium inline-flex items-center justify-center gap-2 border border-accent text-accent py-2 px-6 rounded-sm hover:bg-accent hover:text-white transition-colors', className]} href={href}>
             <slot />
         </a>
     ) : (
-        <button class:list={['inline-flex items-center justify-center gap-2 border border-current py-2 px-6 text-sm hover:bg-muted', className]} type={type}>
+        <button class:list={['font-sans text-sm font-medium inline-flex items-center justify-center gap-2 border border-accent text-accent py-2 px-6 rounded-sm hover:bg-accent hover:text-white transition-colors', className]} type={type}>
             <slot />
         </button>
     )
