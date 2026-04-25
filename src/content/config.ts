@@ -51,7 +51,7 @@ const research = defineCollection({
         publishDate: z.coerce.date(),
         isFeatured: z.boolean().default(false),
         tags: z.array(z.string()).default([]),
-        paperUrl: z.string().url().optional(),
+        paperUrl: z.string().optional(),
         seo: seoSchema.optional()
     })
 });
