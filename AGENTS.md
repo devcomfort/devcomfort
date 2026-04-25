@@ -24,6 +24,31 @@
 - `src/content/research/*.md` frontmatter의 `paperUrl`은 파일명과 정확히 일치해야 함
 - 예: `paperUrl: '/papers/IPCGRL - Language-Instructed Reinforcement Learning for Procedural Level Generation.pdf'`
 
+### ✅ arXiv 논문 정보 확인 방법 (필수)
+
+**arXiv에 등재된 논문의 저자, 기여도, 소속 등 모든 메타데이터는 반드시 TeX 소스를 직접 파싱하여 확인하세요.**
+
+```bash
+# TeX 소스 다운로드 (arXiv ID 예: 2503.12358)
+curl -L "https://arxiv.org/e-print/{ARXIV_ID}" -o /tmp/paper-tex.tar.gz
+mkdir -p /tmp/paper-tex && tar xzf /tmp/paper-tex.tar.gz -C /tmp/paper-tex
+
+# 저자 정보 확인
+grep -n "author\|thanks\|IEEEauthorrefmark\|Equal contribution\|Corresponding" /tmp/paper-tex/main.tex
+```
+
+**왜 TeX 소스인가:**
+- arXiv HTML·웹 페이지의 저자 목록 순서는 실제 기여도와 다를 수 있음
+- HTML 버전과 PDF 버전의 저자 표기(†, ‡ 기호 위치)가 서로 다를 수 있음
+- TeX 소스의 `\author{}`, `\thanks{}` 블록이 유일한 ground truth
+
+### ⚠️ Anti-Pattern: 저자 순서 추정 금지
+
+**외부 링크(arXiv 웹페이지, Google Scholar 등)만 보고 저자 순서나 기여도를 추정하지 마세요.**
+
+- **반드시 TeX 소스**를 다운로드하여 직접 확인하세요 (위 방법 참조).
+- 예: IPCGRL의 경우 arXiv 웹페이지의 저자 목록 순서와 실제 기여도(공동 1저자/2저자/교신)가 다릅니다.
+
 ---
 
 ## Content Collection Authoring Guide
