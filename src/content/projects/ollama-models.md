@@ -5,7 +5,6 @@ publishDate: '2026-04-08'
 isFeatured: false
 tags: ['typescript', 'python', 'library', 'opensource', 'ollama', 'cloudflare-workers']
 sourceUrl: 'https://github.com/devcomfort/ollama-models'
-projectUrl: 'https://ollama-models-api.devcomfort.workers.dev'
 ---
 
 # ollama-models
@@ -23,7 +22,7 @@ packages/
 
 ## REST API
 
-**Base URL:** `https://ollama-models-api.devcomfort.workers.dev`
+**Base URL:** `https://ollama-models-api.devcomfort.workers.dev` *(현재 미운영)*
 
 | 엔드포인트 | 설명 |
 |---|---|
