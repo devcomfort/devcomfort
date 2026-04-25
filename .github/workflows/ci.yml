@@ -53,9 +53,7 @@ jobs:
           recurse: true
           checkFragments: true
           concurrency: 50
-          skip: |
-            ^https?://example\.com
-            ^mailto:
+          skip: ^mailto:
 
   deploy:
     name: Deploy to Cloudflare Pages
