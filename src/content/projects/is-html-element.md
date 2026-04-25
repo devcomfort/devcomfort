@@ -3,7 +3,7 @@ title: 'is-html-element'
 description: 'instanceof보다 100% 정확한 HTML 요소 타입 판별 유틸리티. tagName 기반으로 112개 HTML 요소를 완벽하게 구분합니다.'
 publishDate: '2025-09-09'
 isFeatured: false
-tags: ['typescript', 'javascript', 'library', 'opensource', 'dom', 'type-guard']
+tags: ['typescript', 'type-guard']
 sourceUrl: 'https://github.com/devcomfort/is-html-element'
 projectUrl: 'https://www.npmjs.com/package/is-html-element'
 ---

@@ -3,7 +3,7 @@ title: 'blob-to-url'
 description: 'Blob 객체를 Blob URL 또는 Data URI로 변환하는 경량 유틸리티. ESM, CJS, UMD 모두 지원합니다.'
 publishDate: '2025-03-29'
 isFeatured: false
-tags: ['typescript', 'javascript', 'library', 'opensource', 'browser']
+tags: ['data-preprocessing', 'typescript', 'data-uri', 'web-api']
 sourceUrl: 'https://github.com/devcomfort/blob-to-url'
 ---
 

@@ -3,7 +3,7 @@ title: 'parallel-compress'
 description: 'asyncio 기반 병렬 파일 압축/해제 Python 라이브러리. ZIP, TAR, gz, bz2, xz 등 11개 포맷을 지원합니다.'
 publishDate: '2026-03-10'
 isFeatured: false
-tags: ['python', 'library', 'opensource', 'async', 'compression']
+tags: ['python', 'compression']
 sourceUrl: 'https://github.com/devcomfort-labs/parallel_compress'
 ---
 

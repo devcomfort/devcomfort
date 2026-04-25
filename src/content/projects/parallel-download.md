@@ -3,7 +3,7 @@ title: 'parallel-download'
 description: 'asyncio와 aiohttp 기반의 고성능 병렬 파일 다운로드 Python 라이브러리. 91개 테스트, 100% 커버리지.'
 publishDate: '2026-03-02'
 isFeatured: false
-tags: ['python', 'library', 'opensource', 'async', 'download']
+tags: ['data-collection', 'python', 'download']
 sourceUrl: 'https://github.com/devcomfort-labs/parallel_download'
 ---
 

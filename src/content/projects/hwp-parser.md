@@ -3,7 +3,7 @@ title: 'hwp-parser'
 description: 'HWP 파일을 텍스트, HTML, Markdown, ODT로 변환하는 Python 라이브러리. LlamaIndex 통합으로 RAG 파이프라인에서 바로 활용 가능.'
 publishDate: '2026-02-17'
 isFeatured: false
-tags: ['python', 'library', 'opensource', 'hwp', 'rag', 'llama-index']
+tags: ['data-preprocessing', 'python', 'document-conversion', 'hwp']
 sourceUrl: 'https://github.com/devcomfort-labs/hwp-parser'
 projectUrl: 'https://huggingface.co/spaces/devcomfort/hwp-parser'
 ---

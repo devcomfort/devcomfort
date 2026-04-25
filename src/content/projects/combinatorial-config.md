@@ -3,7 +3,7 @@ title: 'combinatorial-config'
 description: '실험 설정의 모든 조합을 자동으로 생성하는 Python 라이브러리. 하이퍼파라미터 탐색과 그리드 서치를 간결하게 표현할 수 있습니다.'
 publishDate: '2025-11-10'
 isFeatured: false
-tags: ['python', 'library', 'opensource', 'machine-learning', 'experiment']
+tags: ['research', 'python', 'combinatorial', 'experiment-config']
 sourceUrl: 'https://github.com/devcomfort/combinatorial-config'
 ---
 

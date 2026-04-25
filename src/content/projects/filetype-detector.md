@@ -3,7 +3,7 @@ title: 'filetype-detector'
 description: '경로 기반, magic number, AI(Magika) 추론 전략을 조합해 파일 타입을 탐지하는 Python 라이브러리.'
 publishDate: '2026-04-10'
 isFeatured: false
-tags: ['python', 'library', 'opensource', 'file-detection', 'magika']
+tags: ['data-preprocessing', 'python', 'filetype']
 sourceUrl: 'https://github.com/devcomfort-labs/filetype_detector'
 ---
 

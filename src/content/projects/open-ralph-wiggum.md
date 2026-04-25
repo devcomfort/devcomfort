@@ -3,7 +3,7 @@ title: 'open-ralph-wiggum'
 description: 'Claude Code, Codex, Copilot CLI, OpenCode를 지원하는 자율 AI 코딩 에이전트 루프 CLI. 에이전트가 태스크를 완료할 때까지 반복 실행합니다.'
 publishDate: '2026-03-15'
 isFeatured: false
-tags: ['typescript', 'cli', 'ai', 'agent', 'opensource', 'claude-code', 'opencode']
+tags: ['agentic-loop', 'cli', 'ralph-wiggum']
 sourceUrl: 'https://github.com/devcomfort/open-ralph-wiggum'
 ---
 
