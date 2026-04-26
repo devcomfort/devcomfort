@@ -60,7 +60,7 @@ const tagResearch = getPostsByTag(allResearch, tag.slug).sort(sortItemsByDateDes
                             <FormattedDate date={item.data.publishDate} />
                         </time>
                         <h3 class="font-serif text-lg font-semibold leading-tight mb-2">
-                            <a class="text-main hover:text-accent hover:underline hover:decoration-1 hover:underline-offset-2" href={`/research/${item.slug}/`}>{item.data.title}</a>
+                            <a class="text-main hover:text-accent hover:underline hover:decoration-1 hover:underline-offset-2" href={`/research/${item.id}/`}>{item.data.title}</a>
                         </h3>
                         {item.data.description && <p class="font-serif text-base leading-relaxed text-text-secondary mb-2">{item.data.description}</p>}
                         {item.data.tags && item.data.tags.length > 0 && (
