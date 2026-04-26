@@ -121,7 +121,6 @@ const featuredResearch = research.filter(({ data }) => data.isFeatured);
                 <ul class="list-none flex flex-col gap-2">
                     <li class="font-serif text-base text-text-secondary pl-4 relative before:content-['—'] before:absolute before:left-0 before:text-text-tertiary">LLM (Large Language Models)</li>
                     <li class="font-serif text-base text-text-secondary pl-4 relative before:content-['—'] before:absolute before:left-0 before:text-text-tertiary">Multi-Agent Systems</li>
-                    <li class="font-serif text-base text-text-secondary pl-4 relative before:content-['—'] before:absolute before:left-0 before:text-text-tertiary">Reinforcement Learning</li>
                 </ul>
             </div>
 
@@ -131,7 +130,7 @@ const featuredResearch = research.filter(({ data }) => data.isFeatured);
                     Keywords
                 </h3>
                 <div class="flex flex-wrap gap-2">
-                    {['data-preprocessing', 'data-collection', 'research', 'python', 'typescript', 'agentic-system', 'embedding', 'llm', 'machine-learning', 'reinforcement-learning'].map((tag) => (
+                    {['data-preprocessing', 'data-collection', 'research', 'python', 'typescript', 'embedding', 'llm', 'machine-learning'].map((tag) => (
                         <a class="font-mono text-xs text-text-secondary bg-bg-muted border border-border-main px-3 py-0.5 rounded-sm hover:bg-accent/8 hover:border-accent hover:text-accent no-underline transition-colors" href={`/tags/${tag}/`}>
                             {tag}
                         </a>
