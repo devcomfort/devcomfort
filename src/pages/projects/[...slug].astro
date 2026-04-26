@@ -1,5 +1,5 @@
 ---
-import { type CollectionEntry, getCollection } from 'astro:content';
+import { type CollectionEntry, getCollection, render } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import FormattedDate from '../../components/FormattedDate.astro';
 import { slugify } from '../../utils/common-utils';
@@ -7,7 +7,7 @@ import { slugify } from '../../utils/common-utils';
 export async function getStaticPaths() {
     const projects = await getCollection('projects');
     return projects.map((project) => ({
-        params: { slug: project.slug },
+        params: { slug: project.id },
         props: { project }
     }));
 }
@@ -18,7 +18,7 @@ type Props = {
 
 const { project } = Astro.props;
 const { title, publishDate, description, tags = [], projectUrl, sourceUrl, seo } = project.data;
-const { Content } = await project.render();
+const { Content } = await render(project);
 ---
 
 <BaseLayout title={seo?.title ?? title} description={seo?.description ?? description ?? ''} image={seo?.image}>
