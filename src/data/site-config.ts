@@ -28,6 +28,7 @@ export type SiteConfig = {
     logo?: Image;
     title: string;
     subtitle?: string;
+    tagline?: string;
     description: string;
     image?: Image;
     headerNavLinks?: Link[];
@@ -42,6 +43,7 @@ export type SiteConfig = {
 const siteConfig: SiteConfig = {
     title: 'devcomfort',
     subtitle: 'devcomfort의 기술 블로그 & 포트폴리오',
+    tagline: 'LLM × Multi-Agent System',
     description: 'devcomfort의 기술 블로그 & 포트폴리오',
     headerNavLinks: [
         { text: 'Home', href: '/' },
