@@ -1,7 +1,7 @@
 ---
-import { marked } from 'marked';
 import Button from './Button.astro';
 import siteConfig from '../data/site-config';
+import { parseInlineLinks } from '../utils/security-utils';
 
 const hero = siteConfig.hero;
 ---
@@ -16,7 +16,13 @@ const hero = siteConfig.hero;
                     {hero.image.caption && <figcaption class="mt-1.5 text-xs sm:text-sm">{hero.image.caption}</figcaption>}
                 </figure>
             )}
-            {hero.text && <div class="max-w-none prose prose-dante sm:prose-lg" set:html={marked.parse(hero.text)} />}
+            {hero.text && (
+                <p class="max-w-none prose prose-dante sm:prose-lg">
+                    {parseInlineLinks(hero.text).map((segment) =>
+                        segment.href ? <a href={segment.href}>{segment.text}</a> : segment.text
+                    )}
+                </p>
+            )}
             {hero.actions && hero.actions.length > 0 && (
                 <div class="flex flex-wrap gap-4">
                     {hero.actions.map((action) => (

@@ -1,6 +1,13 @@
 import { defineCollection } from 'astro:content';
 import { z } from 'astro/zod';
 import { glob } from 'astro/loaders';
+import { isSafeHttpsUrl, isSafePaperUrl } from './utils/security-utils';
+
+const httpsUrl = z.url().refine(isSafeHttpsUrl, {
+    message: 'Only HTTPS URLs are allowed'
+});
+
+const paperUrlSchema = z.string().refine(isSafePaperUrl, 'Paper URLs must be HTTPS URLs or safe /papers/ PDF paths');
 
 const seoSchema = z.object({
     title: z.string().min(5).max(120).optional(),
@@ -43,8 +50,8 @@ const projects = defineCollection({
         publishDate: z.coerce.date(),
         isFeatured: z.boolean().default(false),
         tags: z.array(z.string()).default([]),
-        projectUrl: z.url().optional(),
-        sourceUrl: z.url().optional(),
+        projectUrl: httpsUrl.optional(),
+        sourceUrl: httpsUrl.optional(),
         seo: seoSchema.optional()
     })
 });
@@ -57,7 +64,7 @@ const research = defineCollection({
         publishDate: z.coerce.date(),
         isFeatured: z.boolean().default(false),
         tags: z.array(z.string()).default([]),
-        paperUrl: z.string().optional(),
+        paperUrl: paperUrlSchema.optional(),
         seo: seoSchema.optional()
     })
 });
